@@ -1,0 +1,22 @@
+digraph flow {
+  graph [label="1.1 唯一合法的调用方向", labelloc=t, fontsize=18, fontname="Microsoft YaHei", rankdir=LR, bgcolor="#FFFFFF", pad=0.25, nodesep=0.35, ranksep=0.55, splines=polyline, dpi=140];
+  node [fontname="Microsoft YaHei", fontsize=11, margin="0.15,0.09", penwidth=1.2, color="#64748B"];
+  edge [fontname="Microsoft YaHei", fontsize=9, color="#64748B", fontcolor="#334155", arrowsize=0.7];
+  "界面" [label="界面与交互层\nKnightUI.exe", shape=box, style="rounded,filled", fillcolor="#DBEAFE"];
+  "协调" [label="业务层：\n游戏协调器\nKnightGame.dll", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "状态" [label="对象与状态", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "地图" [label="地图与碰撞", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "运动" [label="运动与物理", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "战斗" [label="战斗与陷阱", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "决策" [label="敌人决策", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "内容" [label="关卡与配置", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "存档" [label="存档与数据库", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "界面" -> "协调" [label="提交命令、推进时间、读取快照和事件"];
+  "协调" -> "状态";
+  "协调" -> "地图";
+  "协调" -> "运动";
+  "协调" -> "战斗";
+  "协调" -> "决策";
+  "协调" -> "内容";
+  "协调" -> "存档";
+}

@@ -1,0 +1,32 @@
+digraph flow {
+  graph [label="3.4 按下、按住和松开左右移动键", labelloc=t, fontsize=18, fontname="Microsoft YaHei", rankdir=TB, bgcolor="#FFFFFF", pad=0.25, nodesep=0.35, ranksep=0.55, splines=polyline, dpi=140];
+  node [fontname="Microsoft YaHei", fontsize=11, margin="0.15,0.09", penwidth=1.2, color="#64748B"];
+  edge [fontname="Microsoft YaHei", fontsize=9, color="#64748B", fontcolor="#334155", arrowsize=0.7];
+  "U" [label="界面：\n方向键按下、持续、释放", shape=box, style="rounded,filled", fillcolor="#DBEAFE"];
+  "G1" [label="业务层：\nsubmitCommand(移动按下或释放)", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "G2" [label="业务层：\nadvanceElapsed()、\nrunFixedFrame()", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "S1" [label="对象与状态：\nreadWorld()", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G3" [label="业务层：\n形成本帧移动意图", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "P" [label="运动与物理：\nproposeMotion(快照, 关卡, 意图, 步长)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G4" [label="业务层：\n接收运动提案", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "M" [label="地图与碰撞：\nresolveMovement(地图, 快照, 提案)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G5" [label="业务层：\n接收碰撞裁决", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "P2" [label="运动与物理：\nfinishMotion(提案, 裁决)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G6" [label="业务层：\n合并本帧变更", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "S2" [label="对象与状态：\napplyChanges(整批变更)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G7" [label="业务层：\n生成显示结果", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "U2" [label="界面：\nreadRenderSnapshot() 绘制新位置", shape=box, style="rounded,filled", fillcolor="#DBEAFE"];
+  "U" -> "G1";
+  "G1" -> "G2";
+  "G2" -> "S1";
+  "S1" -> "G3" [label="旧世界快照"];
+  "G3" -> "P";
+  "P" -> "G4" [label="建议位移 MotionBatch"];
+  "G4" -> "M";
+  "M" -> "G5" [label="CollisionBatch"];
+  "G5" -> "P2";
+  "P2" -> "G6" [label="位置、速度候选变更"];
+  "G6" -> "S2";
+  "S2" -> "G7" [label="新世界快照"];
+  "G7" -> "U2";
+}

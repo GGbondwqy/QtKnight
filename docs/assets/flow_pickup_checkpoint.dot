@@ -1,0 +1,26 @@
+digraph flow {
+  graph [label="3.9 拾取物品、激活检查点", labelloc=t, fontsize=18, fontname="Microsoft YaHei", rankdir=TB, bgcolor="#FFFFFF", pad=0.25, nodesep=0.35, ranksep=0.55, splines=polyline, dpi=140];
+  node [fontname="Microsoft YaHei", fontsize=11, margin="0.15,0.09", penwidth=1.2, color="#64748B"];
+  edge [fontname="Microsoft YaHei", fontsize=9, color="#64748B", fontcolor="#334155", arrowsize=0.7];
+  "U" [label="界面：\n按交互键", shape=box, style="rounded,filled", fillcolor="#DBEAFE"];
+  "G1" [label="业务层：\nsubmitCommand(交互按下)", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "M" [label="地图与碰撞：\nqueryTriggers(地图, 旧快照, 碰撞裁决\n)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G2" [label="业务层：\n玩家存活且满足距离和条件？", shape=diamond, style="filled", fillcolor="#FEF3C7"];
+  "E" [label="业务层：\n提示不可交互", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "G3" [label="业务层：\n生成拾取或检查点候选变更", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "S" [label="对象与状态：\napplyChanges(整批变更)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G4" [label="业务层：\nmakeSaveData(已提交快照)", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "V" [label="存档与数据库：\nwriteSlot(存档副本)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G5" [label="业务层：\n发布保存结果事件", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "U2" [label="界面：\nreadRenderSnapshot()、\ntakeEvents()", shape=box, style="rounded,filled", fillcolor="#DBEAFE"];
+  "U" -> "G1";
+  "G1" -> "M";
+  "M" -> "G2" [label="拾取物或检查点命中"];
+  "G2" -> "E" [label="否"];
+  "G2" -> "G3" [label="是"];
+  "G3" -> "S";
+  "S" -> "G4" [label="已提交世界"];
+  "G4" -> "V";
+  "V" -> "G5" [label="成功或失败"];
+  "G5" -> "U2";
+}

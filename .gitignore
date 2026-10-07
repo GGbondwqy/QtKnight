@@ -1,0 +1,32 @@
+# 本机构建目录与 IDE 设置
+build/
+output/
+tmp/
+.qtcreator/
+.vs/
+.idea/
+*.user
+*.user.*
+
+# CMake 中间文件及编译产物
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.obj
+*.o
+*.pch
+*.pdb
+*.ilk
+*.exp
+*.dll
+*.exe
+*.lib
+*.a
+
+# 本地数据库与临时文件
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.tmp

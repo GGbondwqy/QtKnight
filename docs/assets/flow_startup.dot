@@ -1,0 +1,21 @@
+digraph flow {
+  graph [label="3.1 启动程序并显示主菜单", labelloc=t, fontsize=18, fontname="Microsoft YaHei", rankdir=TB, bgcolor="#FFFFFF", pad=0.25, nodesep=0.35, ranksep=0.55, splines=polyline, dpi=140];
+  node [fontname="Microsoft YaHei", fontsize=11, margin="0.15,0.09", penwidth=1.2, color="#64748B"];
+  edge [fontname="Microsoft YaHei", fontsize=9, color="#64748B", fontcolor="#334155", arrowsize=0.7];
+  "U" [label="界面：\n启动 KnightUI.exe", shape=box, style="rounded,filled", fillcolor="#DBEAFE"];
+  "G1" [label="业务层：\ncreateGame(配置)", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "S" [label="存档与数据库：\nopenSaveStore(数据库路径)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G2" [label="业务层：\n建立安全的主菜单会话", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "L" [label="存档与数据库：\nlistSlots(连接句柄)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G3" [label="业务层：\n制作主菜单快照", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "E" [label="界面：\n显示具体启动错误", shape=box, style="rounded,filled", fillcolor="#DBEAFE"];
+  "U2" [label="界面：\nreadRenderSnapshot() 绘制菜单", shape=box, style="rounded,filled", fillcolor="#DBEAFE"];
+  "U" -> "G1";
+  "G1" -> "S";
+  "S" -> "G2" [label="连接句柄"];
+  "G2" -> "L";
+  "L" -> "G3" [label="槽位摘要"];
+  "L" -> "E" [label="读取失败"];
+  "G3" -> "U2";
+  "S" -> "E" [label="不可恢复的启动错误"];
+}

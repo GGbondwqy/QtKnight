@@ -1,0 +1,27 @@
+digraph flow {
+  graph [label="3.12 死亡后复活或菜单中选择重试", labelloc=t, fontsize=18, fontname="Microsoft YaHei", rankdir=TB, bgcolor="#FFFFFF", pad=0.25, nodesep=0.35, ranksep=0.55, splines=polyline, dpi=140];
+  node [fontname="Microsoft YaHei", fontsize=11, margin="0.15,0.09", penwidth=1.2, color="#64748B"];
+  edge [fontname="Microsoft YaHei", fontsize=9, color="#64748B", fontcolor="#334155", arrowsize=0.7];
+  "U" [label="界面：\n选择复活或重试", shape=box, style="rounded,filled", fillcolor="#DBEAFE"];
+  "G1" [label="业务层：\nsubmitCommand(复活或重试)", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "G2" [label="业务层：\nhandleMenuCommand() 检查会话状态", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "C" [label="关卡与配置：\nloadLevel(当前关卡编号)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G3" [label="业务层：\n准备最新检查点与永久进度", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "E" [label="业务层：\n保留安全状态并发布错误", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "S" [label="对象与状态：\nresetAtCheckpoint(世界, 关卡, 进\n度)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G4" [label="业务层：\n转为游玩中、重置计时", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "S2" [label="对象与状态：\nreadWorld()", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G5" [label="业务层：\nmakeRenderSnapshot()、\npublishEvents()", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "U2" [label="界面：\nreadRenderSnapshot() 显示复活位置", shape=box, style="rounded,filled", fillcolor="#DBEAFE"];
+  "U" -> "G1";
+  "G1" -> "G2";
+  "G2" -> "C";
+  "C" -> "G3" [label="已验证关卡"];
+  "C" -> "E" [label="失败"];
+  "G3" -> "S";
+  "S" -> "G4" [label="成功状态；世界已重建"];
+  "S" -> "E" [label="失败"];
+  "G4" -> "S2";
+  "S2" -> "G5" [label="恢复后的世界快照"];
+  "G5" -> "U2";
+}

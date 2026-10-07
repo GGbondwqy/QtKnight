@@ -1,0 +1,38 @@
+digraph flow {
+  graph [label="3.7 敌人巡逻、发现玩家并攻击", labelloc=t, fontsize=18, fontname="Microsoft YaHei", rankdir=TB, bgcolor="#FFFFFF", pad=0.25, nodesep=0.35, ranksep=0.55, splines=polyline, dpi=140];
+  node [fontname="Microsoft YaHei", fontsize=11, margin="0.15,0.09", penwidth=1.2, color="#64748B"];
+  edge [fontname="Microsoft YaHei", fontsize=9, color="#64748B", fontcolor="#334155", arrowsize=0.7];
+  "G1" [label="业务层：\nrunFixedFrame()", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "S1" [label="对象与状态：\nreadWorld()", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G2" [label="业务层：\n准备本关规则和帧号", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "A" [label="敌人决策：\ndecideEnemies(快照, 关卡, 帧号)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G3" [label="业务层：\n合并玩家与敌人意图", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "P" [label="运动与物理：\nproposeMotion(快照, 关卡, 意图, 步长)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G4" [label="业务层：\n接收提案", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "M" [label="地图与碰撞：\nresolveMovement(地图, 旧快照, 提案)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G5" [label="业务层：\n接收裁决", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "P2" [label="运动与物理：\nfinishMotion(提案, 裁决)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G6" [label="业务层：\n若有攻击则组装 CombatInput", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "C1" [label="战斗与陷阱：\nevaluateAttacks(战斗输入)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G9" [label="业务层：\n接收攻击候选", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "C2" [label="战斗与陷阱：\nresolveDamage(旧快照, 候选)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G7" [label="业务层：\n合并决策、运动和战斗", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "S2" [label="对象与状态：\napplyChanges(整批变更)", shape=box, style="rounded,filled", fillcolor="#EDE9FE"];
+  "G8" [label="业务层：\n更新画面与事件", shape=box, style="rounded,filled", fillcolor="#DCFCE7"];
+  "G1" -> "S1";
+  "S1" -> "G2" [label="玩家和敌人快照"];
+  "G2" -> "A";
+  "A" -> "G3" [label="敌人意图与决策状态候选"];
+  "G3" -> "P";
+  "P" -> "G4" [label="运动提案"];
+  "G4" -> "M";
+  "M" -> "G5" [label="碰撞裁决"];
+  "G5" -> "P2";
+  "P2" -> "G6" [label="运动候选"];
+  "G6" -> "C1";
+  "C1" -> "G9" [label="攻击候选"];
+  "G9" -> "C2";
+  "C2" -> "G7" [label="伤害候选"];
+  "G7" -> "S2";
+  "S2" -> "G8" [label="新快照"];
+}
