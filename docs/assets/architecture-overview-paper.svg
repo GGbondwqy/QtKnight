@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="940" viewBox="0 0 1600 940" role="img" aria-labelledby="title desc">
+  <title id="title">Qt Knight 系统总体架构</title>
+  <desc id="desc">三层目标架构：KnightUI.exe 经 KnightGame.dll 游戏协调器调用七个互不依赖的底层 DLL；跨模块值类型定义在 KnightContracts.h。</desc>
+  <defs>
+    <style>
+      text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif; fill: #25323b; }
+      .title { font-size: 32px; font-weight: 700; letter-spacing: .5px; }
+      .sub { font-size: 17px; fill: #667985; }
+      .layer { font-size: 20px; font-weight: 700; fill: #345c73; }
+      .num { font-size: 14px; font-weight: 700; letter-spacing: 1px; fill: #67869a; }
+      .main { font-size: 24px; font-weight: 700; }
+      .detail { font-size: 17px; fill: #52636e; }
+      .module { font-size: 18px; font-weight: 700; }
+      .dll { font-size: 15px; fill: #4e6878; }
+      .note { font-size: 14px; fill: #687782; }
+      .caption { font-size: 16px; fill: #566873; }
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#52728a"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="940" fill="#ffffff"/>
+  <text x="92" y="63" class="title">Qt Knight 系统总体架构</text>
+  <text x="1508" y="61" text-anchor="end" class="sub" font-size="17">目标架构 · 接口定义阶段</text>
+  <line x1="92" y1="88" x2="1508" y2="88" stroke="#b7c6cf" stroke-width="1.5"/>
+
+  <!-- Layer 1: presentation and interaction -->
+  <rect x="92" y="118" width="1416" height="140" rx="6" fill="#f8fafb" stroke="#d7e0e5" stroke-width="1.5"/>
+  <text x="120" y="157" class="num">01 / PRESENTATION</text>
+  <text x="120" y="190" class="layer">界面与交互层</text>
+  <rect x="430" y="148" width="740" height="80" rx="5" fill="#ffffff" stroke="#6a8798" stroke-width="1.8"/>
+  <text x="800" y="182" text-anchor="middle" class="main" font-size="24" font-weight="700">KnightUI.exe  ·  界面与交互</text>
+  <text x="800" y="211" text-anchor="middle" class="detail" font-size="17">输入采集 / 菜单与场景绘制 / 状态显示与音效反馈</text>
+
+  <!-- UI to game command and readback -->
+  <line x1="698" y1="229" x2="698" y2="312" stroke="#52728a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="902" y1="311" x2="902" y2="230" stroke="#52728a" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="598" y="267" width="89" height="24" fill="#ffffff"/>
+  <text x="642" y="284" text-anchor="middle" class="note" font-size="14">命令 / 时间</text>
+  <rect x="913" y="267" width="93" height="24" fill="#ffffff"/>
+  <text x="960" y="284" text-anchor="middle" class="note" font-size="14">快照 / 事件</text>
+
+  <!-- Layer 2: orchestration -->
+  <rect x="92" y="314" width="1416" height="161" rx="6" fill="#f8fafb" stroke="#d7e0e5" stroke-width="1.5"/>
+  <text x="120" y="353" class="num">02 / ORCHESTRATION</text>
+  <text x="120" y="386" class="layer">业务逻辑层</text>
+  <rect x="430" y="329" width="740" height="125" rx="5" fill="#edf3f6" stroke="#52728a" stroke-width="2"/>
+  <text x="800" y="367" text-anchor="middle" class="main" font-size="24" font-weight="700">KnightGame.dll  ·  游戏协调器</text>
+  <line x1="490" y1="382" x2="1110" y2="382" stroke="#beced7" stroke-width="1"/>
+  <text x="800" y="412" text-anchor="middle" class="detail" font-size="17">命令整理　·　逻辑帧调度　·　候选结果合并　·　状态提交</text>
+  <text x="800" y="439" text-anchor="middle" class="note" font-size="14">唯一的跨模块协调点</text>
+
+  <!-- Layer 3: seven independent modules -->
+  <rect x="92" y="505" width="1416" height="249" rx="6" fill="#ffffff" stroke="#d7e0e5" stroke-width="1.5"/>
+  <text x="120" y="542" class="num">03 / INDEPENDENT MODULES</text>
+  <text x="120" y="575" class="layer">底层模块层</text>
+  <text x="1480" y="542" text-anchor="end" class="note" font-size="14">业务层独立调用各模块；结果沿接口返回</text>
+
+  <!-- Each module is called independently by the coordinator. -->
+  <g stroke="#6f899a" stroke-width="1.7" fill="none">
+    <path d="M800 455 L197 628" marker-end="url(#arrow)"/>
+    <path d="M800 455 L398 628" marker-end="url(#arrow)"/>
+    <path d="M800 455 L599 628" marker-end="url(#arrow)"/>
+    <path d="M800 455 L800 628" marker-end="url(#arrow)"/>
+    <path d="M800 455 L1001 628" marker-end="url(#arrow)"/>
+    <path d="M800 455 L1202 628" marker-end="url(#arrow)"/>
+    <path d="M800 455 L1403 628" marker-end="url(#arrow)"/>
+  </g>
+
+  <g>
+    <rect x="105" y="635" width="184" height="98" rx="4" fill="#edf3f6" stroke="#52728a" stroke-width="1.7"/>
+    <rect x="105" y="635" width="184" height="4" fill="#52728a"/>
+    <text x="197" y="672" text-anchor="middle" class="module" font-size="18" font-weight="700">对象与状态</text>
+    <text x="197" y="699" text-anchor="middle" class="dll" font-size="15">KnightState.dll</text>
+    <text x="197" y="721" text-anchor="middle" class="note" font-size="14">唯一可写的运行世界</text>
+
+    <rect x="306" y="635" width="184" height="98" rx="4" fill="#ffffff" stroke="#8ca2af" stroke-width="1.5"/>
+    <text x="398" y="672" text-anchor="middle" class="module" font-size="18" font-weight="700">地图与碰撞</text>
+    <text x="398" y="699" text-anchor="middle" class="dll" font-size="15">KnightMap.dll</text>
+    <text x="398" y="721" text-anchor="middle" class="note" font-size="14">阻挡 / 触发区</text>
+
+    <rect x="507" y="635" width="184" height="98" rx="4" fill="#ffffff" stroke="#8ca2af" stroke-width="1.5"/>
+    <text x="599" y="672" text-anchor="middle" class="module" font-size="18" font-weight="700">运动与物理</text>
+    <text x="599" y="699" text-anchor="middle" class="dll" font-size="15">KnightMotion.dll</text>
+    <text x="599" y="721" text-anchor="middle" class="note" font-size="14">位移候选</text>
+
+    <rect x="708" y="635" width="184" height="98" rx="4" fill="#ffffff" stroke="#8ca2af" stroke-width="1.5"/>
+    <text x="800" y="672" text-anchor="middle" class="module" font-size="18" font-weight="700">战斗与陷阱</text>
+    <text x="800" y="699" text-anchor="middle" class="dll" font-size="15">KnightCombat.dll</text>
+    <text x="800" y="721" text-anchor="middle" class="note" font-size="14">伤害候选</text>
+
+    <rect x="909" y="635" width="184" height="98" rx="4" fill="#ffffff" stroke="#8ca2af" stroke-width="1.5"/>
+    <text x="1001" y="672" text-anchor="middle" class="module" font-size="18" font-weight="700">敌人决策</text>
+    <text x="1001" y="699" text-anchor="middle" class="dll" font-size="15">KnightAI.dll</text>
+    <text x="1001" y="721" text-anchor="middle" class="note" font-size="14">敌人意图</text>
+
+    <rect x="1110" y="635" width="184" height="98" rx="4" fill="#ffffff" stroke="#8ca2af" stroke-width="1.5"/>
+    <text x="1202" y="672" text-anchor="middle" class="module" font-size="18" font-weight="700">关卡与配置</text>
+    <text x="1202" y="699" text-anchor="middle" class="dll" font-size="15">KnightContent.dll</text>
+    <text x="1202" y="721" text-anchor="middle" class="note" font-size="14">静态关卡定义</text>
+
+    <rect x="1311" y="635" width="184" height="98" rx="4" fill="#ffffff" stroke="#8ca2af" stroke-width="1.5"/>
+    <text x="1403" y="672" text-anchor="middle" class="module" font-size="18" font-weight="700">存档与数据库</text>
+    <text x="1403" y="699" text-anchor="middle" class="dll" font-size="15">KnightSave.dll</text>
+    <text x="1403" y="721" text-anchor="middle" class="note" font-size="14">持久进度</text>
+  </g>
+
+  <rect x="92" y="778" width="1416" height="79" rx="5" fill="#f8fafb" stroke="#a9bbc6" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <text x="120" y="812" class="layer">共享契约</text>
+  <text x="120" y="839" class="note">公共头文件；不生成 DLL</text>
+  <text x="390" y="812" class="module">KnightContracts.h</text>
+  <text x="390" y="839" class="detail">跨模块值类型：命令 / 只读世界快照 / 候选变更 / 领域事件</text>
+
+  <text x="92" y="905" class="caption">图 1　Qt Knight 的目标依赖结构。箭头表示协调器发起的接口调用；七个底层模块之间没有直接调用或链接。</text>
+</svg>
