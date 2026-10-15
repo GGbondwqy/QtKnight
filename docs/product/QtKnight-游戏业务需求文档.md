@@ -12,6 +12,8 @@
 
 > 本文只描述产品要解决的问题、玩家能做什么、页面与玩法如何表现、失败时如何处理，以及怎样验收。本文不规定 DLL、类、函数、数据库表或代码目录；这些内容由后续《软件设计文档》根据本文逐项转化。
 
+> 本文图表统一以 `.excalidraw` 文件交付。普通 Markdown 阅读器不能直接内嵌预览该格式，请点击图源链接后使用 Excalidraw 网站、VS Code Excalidraw 扩展或兼容工具打开和编辑。
+
 ## 1. 文档目的
 
 本文为 Qt Knight 首个可玩版本建立统一的业务需求基线，使软件设计工程师能够据此划分系统职责、设计状态与接口，使开发和测试人员能够据此判断功能是否符合产品预期。
@@ -45,42 +47,7 @@ Qt Knight 是一款面向 Windows 桌面的二维横版动作闯关游戏。产�
 
 ### 2.3 产品范围思维导图
 
-```mermaid
-mindmap
-  root((Qt Knight 首版))
-    进入游戏
-      新游戏
-      选择存档继续
-      设置
-      退出
-    核心操作
-      左右移动
-      跳跃
-      攻击
-      交互
-      暂停
-    关卡内容
-      图块平台
-      敌人
-      陷阱
-      拾取物
-      检查点
-      门与出口
-    进度循环
-      激活检查点
-      死亡复活
-      完成目标
-      切换下一关
-      保存与读档
-    玩家反馈
-      角色动画
-      状态栏
-      音效
-      提示信息
-      错误说明
-```
-
-可编辑版本：[产品范围思维导图](assets/product-scope-mindmap.excalidraw)。
+可编辑图源：[Qt Knight 首版产品范围](assets/excalidraw/product-scope-mindmap.excalidraw)。
 
 ### 2.4 目标用户
 
@@ -110,26 +77,7 @@ mindmap
 
 ## 3. 产品业务结构
 
-```mermaid
-flowchart TB
-    Product[Qt Knight]
-    Product --> Session[会话与菜单]
-    Product --> Gameplay[关卡游玩]
-    Product --> Progress[进度与存档]
-    Product --> Feedback[显示与反馈]
-
-    Session --> MainMenu[主菜单]
-    Session --> Load[加载与错误处理]
-    Session --> Pause[暂停与恢复]
-    Gameplay --> Control[移动 / 跳跃 / 攻击 / 交互]
-    Gameplay --> World[地图 / 敌人 / 陷阱]
-    Gameplay --> LevelFlow[检查点 / 死亡 / 过关]
-    Progress --> SaveSlot[存档槽]
-    Progress --> Checkpoint[检查点进度]
-    Progress --> Unlock[物品 / 能力 / 解锁]
-    Feedback --> Render[场景与状态栏]
-    Feedback --> Event[动画 / 音效 / 提示]
-```
+可编辑图源：[Qt Knight 产品业务结构](assets/excalidraw/business-structure-tree.excalidraw)。
 
 ### 3.1 主要业务对象
 
@@ -149,46 +97,11 @@ flowchart TB
 
 ### 4.1 完整玩家旅程
 
-```mermaid
-journey
-    title Qt Knight 首版玩家旅程
-    section 进入游戏
-      启动并看到主菜单: 4: 玩家
-      新建或选择存档: 4: 玩家
-      等待关卡载入: 3: 玩家
-    section 学习与探索
-      学习移动和跳跃: 4: 玩家
-      探索地图并躲避陷阱: 4: 玩家
-      遭遇并攻击敌人: 4: 玩家
-    section 风险与恢复
-      受到伤害: 2: 玩家
-      激活检查点: 5: 玩家
-      死亡并复活: 3: 玩家
-    section 达成目标
-      获得关键物品或击败目标: 5: 玩家
-      进入出口并完成关卡: 5: 玩家
-      保存并进入下一关: 5: 玩家
-```
+可编辑图源：[Qt Knight 首版玩家旅程](assets/excalidraw/player-journey.excalidraw)。
 
 ### 4.2 核心玩法循环
 
-```mermaid
-flowchart LR
-    Observe[观察地形、敌人和目标] --> Act[移动 / 跳跃 / 攻击 / 交互]
-    Act --> Resolve{操作结果}
-    Resolve -->|成功推进| Explore[抵达新区域或获得进度]
-    Resolve -->|受到伤害| Recover[调整策略或寻找补给]
-    Resolve -->|死亡| Respawn[从最近检查点复活]
-    Explore --> Goal{目标是否完成}
-    Recover --> Observe
-    Respawn --> Observe
-    Goal -->|否| Observe
-    Goal -->|是| Exit[进入出口并完成关卡]
-    Exit --> Next[保存进度并进入下一关]
-    Next --> Observe
-```
-
-可编辑版本：[核心玩法循环](assets/core-gameplay-loop.excalidraw)。
+可编辑图源：[Qt Knight 核心玩法循环](assets/excalidraw/core-gameplay-loop.excalidraw)。
 
 ### 4.3 最小可玩闭环
 
@@ -204,36 +117,7 @@ flowchart LR
 
 ### 5.1 页面信息架构
 
-```mermaid
-flowchart TB
-    Start[启动页 / 初始化反馈] --> Menu[主菜单]
-    Menu --> New[新游戏确认]
-    Menu --> Slots[继续游戏 / 存档选择]
-    Menu --> Settings[设置页]
-    Menu --> ExitConfirm[退出确认]
-    New --> Loading[加载页]
-    Slots --> Loading
-    Loading --> Game[游戏主页面]
-    Loading --> LoadError[加载失败提示]
-    LoadError --> Menu
-    Game --> Pause[暂停菜单]
-    Game --> Dead[死亡页面]
-    Game --> Complete[关卡完成页面]
-    Pause --> Settings
-    Pause --> Game
-    Pause --> Retry[重试确认]
-    Pause --> SaveReturn[保存并返回]
-    Dead --> Respawn[复活 / 重试]
-    Dead --> Menu
-    Complete --> NextLevel[进入下一关]
-    Complete --> SaveReturn
-    Retry --> Loading
-    Respawn --> Loading
-    NextLevel --> Loading
-    SaveReturn --> Menu
-```
-
-可编辑版本：[页面导航图](assets/page-navigation.excalidraw)。
+可编辑图源：[Qt Knight 页面导航关系](assets/excalidraw/page-navigation.excalidraw)。
 
 ### 5.2 全局页面原则
 
@@ -386,15 +270,7 @@ HUD 至少显示：
 
 一次攻击由三个可感知阶段组成：
 
-```mermaid
-flowchart LR
-    Press[玩家按下攻击] --> Check{存活、可行动、冷却结束、资源足够?}
-    Check -->|否| Reject[不创建攻击；必要时给出反馈]
-    Check -->|是| Windup[起手]
-    Windup --> Active[有效攻击阶段]
-    Active --> Recovery[收招]
-    Recovery --> Ready[等待下一次合法攻击]
-```
+可编辑图源：[玩家攻击业务流程](assets/excalidraw/attack-flow.excalidraw)。
 
 业务规则：
 
@@ -409,20 +285,7 @@ flowchart LR
 
 首版敌人至少支持以下状态语义：
 
-```mermaid
-stateDiagram-v2
-    [*] --> 巡逻
-    巡逻 --> 警戒: 玩家进入索敌范围
-    警戒 --> 追击: 确认目标
-    追击 --> 攻击: 进入攻击范围且冷却结束
-    攻击 --> 追击: 攻击结束且目标仍有效
-    追击 --> 返回: 玩家离开脱离范围
-    返回 --> 巡逻: 回到巡逻区域
-    巡逻 --> 死亡: 生命归零
-    警戒 --> 死亡: 生命归零
-    追击 --> 死亡: 生命归零
-    攻击 --> 死亡: 生命归零
-```
+可编辑图源：[敌人行为状态](assets/excalidraw/enemy-state.excalidraw)。
 
 - 索敌距离和脱离距离应分开，以避免敌人在边界反复切换状态。
 - 敌人受到地图阻挡约束，不能因追击穿过实心墙体。
@@ -455,19 +318,7 @@ stateDiagram-v2
 
 ### 7.8 死亡、复活和重试
 
-```mermaid
-flowchart TD
-    Damage[受到有效伤害] --> Health{生命是否归零?}
-    Health -->|否| Continue[继续游玩]
-    Health -->|是| Dead[进入死亡状态]
-    Dead --> Choice{玩家选择}
-    Choice -->|复活/重试| Validate{检查点或出生点有效?}
-    Validate -->|是| Rebuild[重建本关运行状态]
-    Rebuild --> Play[返回游玩]
-    Validate -->|否| Error[保留安全状态并提示错误]
-    Choice -->|返回菜单| Warn[提示未保存进度风险]
-    Warn --> Menu[返回主菜单]
-```
+可编辑图源：[死亡、复活与重试流程](assets/excalidraw/respawn-flow.excalidraw)。
 
 复活时：
 
@@ -548,17 +399,7 @@ flowchart TD
 
 ### 9.3 保存流程
 
-```mermaid
-flowchart TD
-    Trigger[检查点 / 通关 / 主动保存] --> Committed{本次玩法结果已经确认?}
-    Committed -->|否| Wait[等待结果确认，不保存草稿]
-    Committed -->|是| Snapshot[制作可持久化进度副本]
-    Snapshot --> Write[尝试完整写入存档]
-    Write --> Result{写入结果}
-    Result -->|成功| Success[提示保存成功]
-    Result -->|失败| Rollback[保留旧存档和当前内存进度]
-    Rollback --> Retry[提示尚未保存并允许重试]
-```
+可编辑图源：[进度保存流程](assets/excalidraw/save-flow.excalidraw)。
 
 ### 9.4 读档规则
 
@@ -571,26 +412,7 @@ flowchart TD
 
 ### 10.1 会话状态图
 
-```mermaid
-stateDiagram-v2
-    [*] --> 初始化
-    初始化 --> 主菜单: 初始化成功
-    初始化 --> 初始化失败: 初始化失败
-    初始化失败 --> 初始化: 重试
-    主菜单 --> 加载中: 新游戏或继续游戏
-    加载中 --> 游玩中: 完整加载成功
-    加载中 --> 主菜单: 加载失败或取消
-    游玩中 --> 已暂停: 暂停
-    已暂停 --> 游玩中: 继续
-    游玩中 --> 死亡: 生命归零
-    死亡 --> 加载中: 复活或重试
-    游玩中 --> 关卡完成: 目标完成并进入出口
-    关卡完成 --> 加载中: 下一关
-    已暂停 --> 主菜单: 保存并返回成功
-    死亡 --> 主菜单: 返回菜单
-    关卡完成 --> 主菜单: 返回菜单
-    主菜单 --> [*]: 退出
-```
+可编辑图源：[游戏会话状态](assets/excalidraw/session-state.excalidraw)。
 
 ### 10.2 操作优先级
 
@@ -613,7 +435,7 @@ stateDiagram-v2
 | 关卡边界 | 新关卡准备成功前不得破坏当前安全状态 |
 | 错误边界 | 失败必须可见、可理解、可重试，不得静默丢失进度 |
 
-可编辑版本：[异常与安全边界](assets/safety-boundaries.excalidraw)。
+可编辑图源：[异常与安全边界](assets/excalidraw/safety-boundaries.excalidraw)。
 
 ## 11. 异常与恢复需求
 
@@ -627,7 +449,7 @@ stateDiagram-v2
 | ER-006 | 帧率卡顿 | 限制追赶，不让游戏瞬间推进数秒 | 玩法时间的一致性 |
 | ER-007 | 必要运行文件缺失 | 启动前或初始化时明确指出缺失，禁止进入游玩 | 存档文件和用户设置 |
 
-异常流程的可编辑图源见：[异常与安全边界](assets/safety-boundaries.excalidraw)。
+异常流程图及可编辑源文件见上节“产品边界”。
 
 ## 12. 视觉、音频和可用性需求
 
@@ -724,4 +546,3 @@ stateDiagram-v2
 - [ ] 存档保存什么、不保存什么以及失败行为是否明确。
 - [ ] 软件设计工程师能否根据需求编号继续进行模块和接口设计。
 - [ ] 测试人员能否根据验收场景判断通过或失败。
-
