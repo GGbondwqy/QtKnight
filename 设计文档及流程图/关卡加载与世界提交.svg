@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="1046" viewBox="0 32 1464 1046" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">关卡加载与世界提交</title>
+<desc id="description">两个入口读取槽位、解析玩家进度并准备世界。选关须原子写入起点后提交，继续从槽位关卡恢复。未选关的槽转入选关页。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="1078" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">关卡加载与世界提交</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">选关与继续共用读档和组装流程，按入口条件提交 World。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<path d="M202,153 L209,153 M214,153 L221,153 M226,153 L232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<path d="M350,153 L352,153 M357,153 L359,153 M364,153 L366,153 M371,153 L373,153 M378,153 L380,153" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="380,153 371,157 371,149" fill="#7953a0"/>
+<text x="390" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">Qt 回调</text>
+<line x1="56" y1="177" x2="1408" y2="177" stroke="#dbe3eb" />
+<text x="56" y="208" text-anchor="start" font-size="20" font-weight="700" fill="#172d43">入口函数</text>
+<text x="560" y="208" text-anchor="start" font-size="20" font-weight="700" fill="#172d43">调用顺序</text>
+<text x="1048" y="208" text-anchor="start" font-size="20" font-weight="700" fill="#172d43">子调用</text>
+<text x="56" y="741" text-anchor="start" font-size="17" font-weight="700" fill="#172d43">prepareLevel 参数</text>
+<text x="56" y="767" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">选关  levelId · restoreCheckpoint=false</text>
+<text x="56" y="791" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">继续  slot.levelId · restoreCheckpoint=true</text>
+<text x="56" y="815" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">选关先校验解锁</text>
+<text x="56" y="878" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">失败时返回 false</text>
+<text x="56" y="903" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">填写 errorMessage，保留当前 World 与旧档</text>
+<path d="M236,298 L236,300 M236,305 L236,307 M236,312 L236,314 M236,319 L236,321 M236,326 L236,328 M236,333 L236,335 M236,340 L236,342 M236,347 L236,349" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="236,350 232,341 240,341" fill="#7953a0"/>
+<path d="M56,262 L54,262 M49,262 L47,262 M42,262 L40,262 M35,262 L33,262 M28,262 L28,264 M28,269 L28,271 M28,276 L28,278 M28,283 L28,285 M28,290 L28,292 M28,297 L28,299 M28,304 L28,306 M28,311 L28,313 M28,318 L28,320 M28,325 L28,327 M28,332 L28,334 M28,339 L28,341 M28,346 L28,348 M28,353 L28,355 M28,360 L28,362 M28,367 L28,369 M28,374 L28,376 M28,381 L28,383 M28,388 L28,390 M28,395 L28,397 M28,402 L28,404 M28,409 L28,411 M28,416 L28,418 M28,423 L28,425 M28,430 L28,432 M28,437 L28,439 M28,444 L28,446 M28,451 L28,453 M28,453 L30,453 M35,453 L37,453 M42,453 L44,453 M49,453 L51,453 M56,453 L58,453 M63,453 L65,453 M70,453 L72,453 M77,453 L79,453 M84,453 L86,453 M91,453 L93,453 M98,453 L100,453 M105,453 L107,453 M112,453 L114,453 M119,453 L121,453 M126,453 L128,453 M133,453 L135,453 M140,453 L142,453 M147,453 L149,453 M154,453 L156,453 M161,453 L163,453 M163,453 L163,455 M163,460 L163,462 M163,467 L163,469" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="163,474 159,465 167,465" fill="#7953a0"/>
+<polyline points="416,386 442,386 442,1006" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="416,510 442,510" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="442,510 560,510" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,510 551,514 551,506" fill="#314d6a"/>
+<polyline points="442,634 560,634" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,634 551,638 551,630" fill="#314d6a"/>
+<polyline points="442,758 560,758" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,758 551,762 551,754" fill="#314d6a"/>
+<polyline points="442,882 560,882" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,882 551,886 551,878" fill="#314d6a"/>
+<polyline points="442,1006 560,1006" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,1006 551,1010 551,1002" fill="#314d6a"/>
+<polyline points="236,546 236,598" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="236,598 232,589 240,589" fill="#314d6a"/>
+<path d="M740,546 L740,553 M740,558 L740,565 M740,570 L740,577 M740,582 L740,589 M740,594 L740,598" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,598 736,589 744,589" fill="#227461"/>
+<path d="M740,670 L740,677 M740,682 L740,689 M740,694 L740,701 M740,706 L740,713 M740,718 L740,722" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,722 736,713 744,713" fill="#227461"/>
+<polyline points="920,745 1048,745" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,745 1039,749 1039,741" fill="#314d6a"/>
+<path d="M1048,772 L1041,772 M1036,772 L1029,772 M1024,772 L1017,772 M1012,772 L1005,772 M1000,772 L993,772 M988,772 L981,772 M976,772 L969,772 M964,772 L957,772 M952,772 L945,772 M940,772 L933,772 M928,772 L921,772" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="920,772 929,768 929,776" fill="#227461"/>
+<path d="M740,794 L740,801 M740,806 L740,813 M740,818 L740,825 M740,830 L740,837 M740,842 L740,846" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,846 736,837 744,837" fill="#227461"/>
+<path d="M740,918 L740,925 M740,930 L740,937 M740,942 L740,949 M740,954 L740,961 M740,966 L740,970" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,970 736,961 744,961" fill="#227461"/>
+<path d="M852,794 L852,801 M852,806 L852,810 M852,810 L859,810 M864,810 L871,810 M876,810 L883,810 M888,810 L895,810 M900,810 L907,810 M912,810 L919,810 M924,810 L931,810 M936,810 L943,810 M948,810 L955,810 M960,810 L965,810 M965,810 L965,817 M965,822 L965,829 M965,834 L965,841 M965,846 L965,853 M965,858 L965,865 M965,870 L965,877 M965,882 L965,889 M965,894 L965,901 M965,906 L965,913 M965,918 L965,925 M965,930 L965,937 M965,942 L965,949 M965,954 L965,957 M965,957 L958,957 M953,957 L946,957 M941,957 L934,957 M929,957 L922,957 M917,957 L910,957 M905,957 L898,957 M893,957 L886,957 M881,957 L874,957 M869,957 L862,957 M857,957 L852,957 M852,957 L852,964 M852,969 L852,970" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="852,970 848,961 856,961" fill="#227461"/>
+<polyline points="920,1006 1048,1006" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,1006 1039,1010 1039,1002" fill="#314d6a"/>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::buildPages()">
+<rect x="56" y="226" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::buildPages()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::startSelectedLevel()">
+<rect x="56" y="350" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="376" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="403" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::startSelectedLevel()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::continueGame()">
+<rect x="56" y="474" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="500" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="527" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::continueGame()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::openLevelSelection()">
+<rect x="56" y="598" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="624" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="651" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::openLevelSelection()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::readSaveSlot()">
+<rect x="560" y="474" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="500" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="527" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::readSaveSlot()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="PlayerObject::loadFromSaveJson()">
+<rect x="560" y="598" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="578" y="624" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="578" y="651" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">PlayerObject::loadFromSaveJson()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::prepareLevel()">
+<rect x="560" y="722" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="748" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="775" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::prepareLevel()</text>
+</g>
+<g class="function" data-module="maplib" data-function="LevelLoader::loadFromFile()">
+<rect x="1048" y="722" width="360" height="72" rx="10" fill="#eaf5ed" stroke="#32744f" stroke-width="1.25"/>
+<text x="1066" y="748" text-anchor="start" font-size="14" font-weight="700" fill="#32744f">maplib</text>
+<text x="1066" y="775" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">LevelLoader::loadFromFile()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::writeProgress()">
+<rect x="560" y="846" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="872" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="899" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::writeProgress()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::activateLevel()">
+<rect x="560" y="970" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="996" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="1023" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::activateLevel()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::releaseAll()">
+<rect x="1048" y="970" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="1066" y="996" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="1066" y="1023" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::releaseAll()</text>
+</g>
+<text x="251" y="331" text-anchor="start" font-size="16" font-weight="400" fill="#7953a0">确认 · levelId</text>
+<text x="126" y="442" text-anchor="middle" font-size="16" font-weight="400" fill="#7953a0">继续 · slotNumber</text>
+<text x="501" y="500" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">01 slotNumber</text>
+<text x="501" y="624" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">02 解析进度</text>
+<text x="501" y="748" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">03 准备 World</text>
+<text x="501" y="872" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">04 仅选关</text>
+<text x="501" y="996" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">05 World&amp;&amp;</text>
+<text x="250" y="576" text-anchor="start" font-size="16" font-weight="400" fill="#314d6a">slot.levelId == 0</text>
+<text x="754" y="577" text-anchor="start" font-size="16" font-weight="400" fill="#227461">true · slot.playerData</text>
+<text x="754" y="701" text-anchor="start" font-size="16" font-weight="400" fill="#227461">true · progress</text>
+<text x="984" y="737" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">path</text>
+<text x="984" y="793" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">true · GameMap</text>
+<text x="754" y="824" text-anchor="start" font-size="16" font-weight="400" fill="#227461">true · prepared</text>
+<text x="754" y="948" text-anchor="start" font-size="16" font-weight="400" fill="#227461">true · 经入口交付 prepared</text>
+<text x="979" y="886" text-anchor="start" font-size="16" font-weight="400" fill="#227461">继续 · prepared</text>
+<text x="984" y="996" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">清 held/pressed</text>
+</g>
+</svg>

@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1051" viewBox="0 32 1440 1051" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">游戏业务总览</title>
+<desc id="description">入口提交 World。输入和定时调度汇入固定步，会话将状态与反馈交给界面。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1440" height="1083" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">游戏业务总览</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">从入口调用到固定步、输出与进度写入。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<path d="M202,153 L209,153 M214,153 L221,153 M226,153 L232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<path d="M350,153 L352,153 M357,153 L359,153 M364,153 L366,153 M371,153 L373,153 M378,153 L380,153" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="380,153 371,157 371,149" fill="#7953a0"/>
+<text x="390" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">Qt 回调</text>
+<line x1="56" y1="177" x2="1384" y2="177" stroke="#dbe3eb" />
+<rect x="56" y="187" width="36" height="27" rx="5" fill="#e9eef4" stroke="none" stroke-width="1"/>
+<text x="74" y="206" text-anchor="middle" font-size="15" font-weight="700" fill="#354f68">01</text>
+<text x="106" y="210" text-anchor="start" font-size="23" font-weight="700" fill="#172d43">关卡准备</text>
+<rect x="56" y="353" width="36" height="27" rx="5" fill="#e9eef4" stroke="none" stroke-width="1"/>
+<text x="74" y="372" text-anchor="middle" font-size="15" font-weight="700" fill="#354f68">02</text>
+<text x="106" y="376" text-anchor="start" font-size="23" font-weight="700" fill="#172d43">固定步推进</text>
+<rect x="56" y="735" width="36" height="27" rx="5" fill="#e9eef4" stroke="none" stroke-width="1"/>
+<text x="74" y="754" text-anchor="middle" font-size="15" font-weight="700" fill="#354f68">03</text>
+<text x="106" y="758" text-anchor="start" font-size="23" font-weight="700" fill="#172d43">输出与写盘</text>
+<polyline points="416,265 540,265" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="540,265 531,269 531,261" fill="#314d6a"/>
+<polyline points="900,252 1024,252" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1024,252 1015,256 1015,248" fill="#314d6a"/>
+<path d="M1024,279 L1017,279 M1012,279 L1005,279 M1000,279 L993,279 M988,279 L981,279 M976,279 L969,279 M964,279 L957,279 M952,279 L945,279 M940,279 L933,279 M928,279 L921,279 M916,279 L909,279 M904,279 L900,279" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="900,279 909,275 909,283" fill="#227461"/>
+<path d="M236,301 L236,308 M236,313 L236,320 M236,325 L236,332 M236,334 L243,334 M248,334 L255,334 M260,334 L267,334 M272,334 L279,334 M284,334 L291,334 M296,334 L303,334 M308,334 L315,334 M320,334 L327,334 M332,334 L339,334 M344,334 L351,334 M356,334 L363,334 M368,334 L375,334 M380,334 L387,334 M392,334 L399,334 M404,334 L411,334 M416,334 L423,334 M428,334 L435,334 M440,334 L447,334 M452,334 L459,334 M464,334 L471,334 M476,334 L483,334 M488,334 L495,334 M500,334 L507,334 M512,334 L519,334 M524,334 L531,334 M536,334 L543,334 M548,334 L555,334 M560,334 L567,334 M572,334 L579,334 M584,334 L591,334 M596,334 L603,334 M608,334 L615,334 M620,334 L627,334 M632,334 L639,334 M644,334 L651,334 M656,334 L663,334 M668,334 L675,334 M680,334 L687,334 M692,334 L699,334 M704,334 L711,334 M716,334 L723,334 M728,334 L735,334 M740,334 L747,334 M752,334 L759,334 M764,334 L771,334 M776,334 L783,334 M788,334 L795,334 M800,334 L807,334 M812,334 L819,334 M824,334 L831,334 M836,334 L843,334 M848,334 L855,334 M860,334 L867,334 M872,334 L879,334 M884,334 L891,334 M896,334 L903,334 M908,334 L915,334 M920,334 L927,334 M932,334 L939,334 M944,334 L948,334 M948,334 L948,341 M948,346 L948,353 M948,358 L948,365 M948,370 L948,377 M948,382 L948,389 M948,394 L948,401 M948,406 L948,413 M948,418 L948,425 M948,430 L948,437 M948,442 L948,449 M948,454 L948,461 M948,466 L948,473 M948,478 L948,485 M948,490 L948,497 M948,502 L948,509 M948,514 L948,521 M948,526 L948,533 M948,538 L948,545 M948,550 L948,557 M948,562 L948,569 M948,574 L948,581 M948,586 L948,593 M948,598 L948,605 M948,605 L941,605 M936,605 L929,605 M924,605 L917,605 M912,605 L905,605 M900,605 L893,605 M888,605 L881,605 M876,605 L869,605 M864,605 L857,605 M852,605 L845,605 M840,605 L833,605 M830,605 L830,612 M830,617 L830,624 M830,629 L830,636" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="830,637 826,628 834,628" fill="#227461"/>
+<polyline points="236,474 236,515" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="236,515 232,506 240,506" fill="#314d6a"/>
+<polyline points="720,474 720,515" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="720,515 716,506 724,506" fill="#314d6a"/>
+<polyline points="720,587 720,637" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="720,637 716,628 724,628" fill="#314d6a"/>
+<path d="M236,587 L236,594 M236,599 L236,606 M236,611 L236,618 M236,623 L236,630 M236,635 L236,642 M236,647 L236,654 M236,659 L236,666 M236,671 L236,673 M236,673 L243,673 M248,673 L255,673 M260,673 L267,673 M272,673 L279,673 M284,673 L291,673 M296,673 L303,673 M308,673 L315,673 M320,673 L327,673 M332,673 L339,673 M344,673 L351,673 M356,673 L363,673 M368,673 L375,673 M380,673 L387,673 M392,673 L399,673 M404,673 L411,673 M416,673 L423,673 M428,673 L435,673 M440,673 L447,673 M452,673 L459,673 M464,673 L471,673 M476,673 L483,673 M488,673 L495,673 M500,673 L507,673 M512,673 L519,673 M524,673 L531,673 M536,673 L540,673" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="540,673 531,677 531,669" fill="#227461"/>
+<polyline points="900,660 1024,660" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1024,660 1015,664 1015,656" fill="#314d6a"/>
+<path d="M1024,687 L1017,687 M1012,687 L1005,687 M1000,687 L993,687 M988,687 L981,687 M976,687 L969,687 M964,687 L957,687 M952,687 L945,687 M940,687 L933,687 M928,687 L921,687 M916,687 L909,687 M904,687 L900,687" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="900,687 909,683 909,691" fill="#227461"/>
+<path d="M622,709 L622,716 M622,721 L622,728 M622,733 L622,740 M622,745 L622,752 M622,757 L622,764 M622,769 L622,776 M622,781 L622,788 M622,793 L622,800 M622,805 L622,811 M622,811 L615,811 M610,811 L603,811 M598,811 L591,811 M586,811 L579,811 M574,811 L567,811 M562,811 L555,811 M550,811 L543,811 M538,811 L531,811 M526,811 L519,811 M514,811 L507,811 M502,811 L495,811 M490,811 L483,811 M478,811 L471,811 M466,811 L459,811 M454,811 L447,811 M442,811 L435,811 M430,811 L423,811 M418,811 L411,811 M406,811 L399,811 M394,811 L387,811 M382,811 L375,811 M370,811 L363,811 M358,811 L351,811 M346,811 L339,811 M334,811 L327,811 M322,811 L315,811 M310,811 L303,811 M298,811 L291,811 M286,811 L279,811 M274,811 L267,811 M262,811 L255,811 M250,811 L243,811 M238,811 L236,811 M236,811 L236,818 M236,823 L236,830 M236,835 L236,842 M236,847 L236,850" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="236,850 232,841 240,841" fill="#227461"/>
+<polyline points="720,709 720,850" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="720,850 716,841 724,841" fill="#314d6a"/>
+<path d="M818,709 L818,716 M818,721 L818,728 M818,733 L818,740 M818,745 L818,752 M818,757 L818,764 M818,769 L818,776 M818,781 L818,788 M818,793 L818,800 M818,805 L818,811 M818,811 L825,811 M830,811 L837,811 M842,811 L849,811 M854,811 L861,811 M866,811 L873,811 M878,811 L885,811 M890,811 L897,811 M902,811 L909,811 M914,811 L921,811 M926,811 L933,811 M938,811 L945,811 M950,811 L957,811 M962,811 L969,811 M974,811 L981,811 M986,811 L993,811 M998,811 L1005,811 M1010,811 L1017,811 M1022,811 L1029,811 M1034,811 L1041,811 M1046,811 L1053,811 M1058,811 L1065,811 M1070,811 L1077,811 M1082,811 L1089,811 M1094,811 L1101,811 M1106,811 L1113,811 M1118,811 L1125,811 M1130,811 L1137,811 M1142,811 L1149,811 M1154,811 L1161,811 M1166,811 L1173,811 M1178,811 L1185,811 M1190,811 L1197,811 M1202,811 L1204,811 M1204,811 L1204,818 M1204,823 L1204,830 M1204,835 L1204,842 M1204,847 L1204,850" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1204,850 1200,841 1208,841" fill="#227461"/>
+<polyline points="720,922 720,975" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="720,975 716,966 724,966" fill="#314d6a"/>
+<polyline points="900,998 1024,998" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1024,998 1015,1002 1015,994" fill="#314d6a"/>
+<path d="M1024,1025 L1017,1025 M1012,1025 L1005,1025 M1000,1025 L993,1025 M988,1025 L981,1025 M976,1025 L969,1025 M964,1025 L957,1025 M952,1025 L945,1025 M940,1025 L933,1025 M928,1025 L921,1025 M916,1025 L909,1025 M904,1025 L900,1025" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="900,1025 909,1021 909,1029" fill="#227461"/>
+<g class="function" data-module="servicelib" data-function="GameSession::startSelectedLevel()">
+<rect x="56" y="229" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="255" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="282" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::startSelectedLevel()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::prepareLevel()">
+<rect x="540" y="229" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="558" y="255" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="558" y="282" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::prepareLevel()</text>
+</g>
+<g class="function" data-module="maplib" data-function="LevelLoader::loadFromFile()">
+<rect x="1024" y="229" width="360" height="72" rx="10" fill="#eaf5ed" stroke="#32744f" stroke-width="1.25"/>
+<text x="1042" y="255" text-anchor="start" font-size="14" font-weight="700" fill="#32744f">maplib</text>
+<text x="1042" y="282" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">LevelLoader::loadFromFile()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="GamePlayWidget::updateActions()">
+<rect x="56" y="402" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="428" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="455" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GamePlayWidget::updateActions()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::onFrame()">
+<rect x="540" y="402" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="558" y="428" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="558" y="455" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::onFrame()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::setAction()">
+<rect x="56" y="515" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="541" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="568" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::setAction()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::advance()">
+<rect x="540" y="515" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="558" y="541" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="558" y="568" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::advance()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::step()">
+<rect x="540" y="637" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="558" y="663" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="558" y="690" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::step()</text>
+</g>
+<g class="function" data-module="algorithmlib" data-function="GameRules::moveAndCollide()">
+<rect x="1024" y="637" width="360" height="72" rx="10" fill="#fff3df" stroke="#8b5f1c" stroke-width="1.25"/>
+<text x="1042" y="663" text-anchor="start" font-size="14" font-weight="700" fill="#8b5f1c">algorithmlib</text>
+<text x="1042" y="690" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameRules::moveAndCollide()</text>
+</g>
+<g class="function" data-module="visuallib" data-function="SceneRenderer::paint()">
+<rect x="56" y="850" width="360" height="72" rx="10" fill="#f2ecfa" stroke="#755095" stroke-width="1.25"/>
+<text x="74" y="876" text-anchor="start" font-size="14" font-weight="700" fill="#755095">visuallib</text>
+<text x="74" y="903" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">SceneRenderer::paint()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::resolveInteractions()">
+<rect x="540" y="850" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="558" y="876" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="558" y="903" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::resolveInteractions()</text>
+</g>
+<g class="function" data-module="visuallib" data-function="AudioPlayer::play()">
+<rect x="1024" y="850" width="360" height="72" rx="10" fill="#f2ecfa" stroke="#755095" stroke-width="1.25"/>
+<text x="1042" y="876" text-anchor="start" font-size="14" font-weight="700" fill="#755095">visuallib</text>
+<text x="1042" y="903" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">AudioPlayer::play()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::writeProgress()">
+<rect x="540" y="975" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="558" y="1001" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="558" y="1028" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::writeProgress()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="PlayerObject::toSaveJson()">
+<rect x="1024" y="975" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="1042" y="1001" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="1042" y="1028" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">PlayerObject::toSaveJson()</text>
+</g>
+<text x="478" y="255" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">levelId</text>
+<text x="962" y="244" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">path</text>
+<text x="962" y="300" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">GameMap</text>
+<text x="602" y="325" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">已提交 World</text>
+<text x="250" y="501" text-anchor="start" font-size="16" font-weight="400" fill="#314d6a">Action, pressed</text>
+<text x="734" y="501" text-anchor="start" font-size="16" font-weight="400" fill="#314d6a">elapsedSeconds</text>
+<text x="734" y="618" text-anchor="start" font-size="16" font-weight="400" fill="#314d6a">1/60 s</text>
+<text x="385" y="663" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">held / pressed</text>
+<text x="962" y="652" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">bounds</text>
+<text x="962" y="708" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">位移结果</text>
+<text x="425" y="801" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">const World&amp; · 经画布</text>
+<text x="734" y="795" text-anchor="start" font-size="16" font-weight="400" fill="#314d6a">health &gt; 0</text>
+<text x="1028" y="801" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">Feedback · 经主窗口</text>
+<text x="734" y="955" text-anchor="start" font-size="16" font-weight="400" fill="#314d6a">提交进度后</text>
+<text x="962" y="990" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">导出进度</text>
+<text x="962" y="1046" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">playerData</text>
+</g>
+</svg>

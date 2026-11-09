@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="774" viewBox="0 32 1464 774" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">暂停状态与输入清理</title>
+<desc id="description">暂停切换清会话动作，失焦与重绑先清物理按键。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="806" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">暂停状态与输入清理</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">暂停切换清会话动作，失焦与重绑先清物理按键。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<path d="M202,153 L209,153 M214,153 L221,153 M226,153 L232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<path d="M350,153 L352,153 M357,153 L359,153 M364,153 L366,153 M371,153 L373,153 M378,153 L380,153" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="380,153 371,157 371,149" fill="#7953a0"/>
+<text x="390" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">Qt 回调</text>
+<line x1="56" y1="177" x2="1408" y2="177" stroke="#dbe3eb" />
+<path d="M416,262 L418,262 M423,262 L425,262 M430,262 L432,262 M437,262 L439,262 M444,262 L446,262 M451,262 L453,262 M458,262 L460,262 M465,262 L467,262 M472,262 L474,262 M479,262 L481,262 M486,262 L488,262 M493,262 L495,262 M500,262 L502,262 M507,262 L509,262 M514,262 L516,262 M521,262 L523,262 M528,262 L530,262 M535,262 L537,262 M542,262 L544,262 M549,262 L551,262 M556,262 L558,262 M563,262 L565,262 M570,262 L572,262 M577,262 L579,262 M584,262 L586,262 M591,262 L593,262 M598,262 L600,262 M605,262 L607,262 M612,262 L614,262 M619,262 L621,262 M626,262 L628,262 M633,262 L635,262 M640,262 L642,262 M647,262 L649,262 M654,262 L656,262 M661,262 L663,262 M668,262 L670,262 M675,262 L677,262 M682,262 L684,262 M689,262 L691,262 M696,262 L698,262 M703,262 L705,262 M710,262 L712,262 M717,262 L719,262 M724,262 L726,262 M731,262 L733,262 M738,262 L740,262 M740,262 L740,264 M740,269 L740,271 M740,276 L740,278 M740,283 L740,285 M740,290 L740,292 M740,297 L740,299 M740,304 L740,306 M740,311 L740,313 M740,318 L740,320 M740,325 L740,327 M740,332 L740,334 M740,339 L740,341" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,344 736,335 744,335" fill="#7953a0"/>
+<polyline points="416,380 560,380" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,380 551,384 551,376" fill="#314d6a"/>
+<polyline points="920,380 1048,380" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,380 1039,384 1039,376" fill="#314d6a"/>
+<polyline points="416,498 520,498 520,600 560,600" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,600 551,604 551,596" fill="#314d6a"/>
+<polyline points="367,462 367,441 810,441 810,416" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="810,416 814,425 806,425" fill="#314d6a"/>
+<polyline points="416,629 560,629" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,629 551,633 551,625" fill="#314d6a"/>
+<polyline points="416,734 740,734 740,652" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,652 744,661 736,661" fill="#314d6a"/>
+<polyline points="920,616 1228,616 1228,416" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1228,416 1232,425 1224,425" fill="#314d6a"/>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::buildPages()">
+<rect x="56" y="226" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::buildPages()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::advance()">
+<rect x="56" y="344" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::advance()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::setPaused()">
+<rect x="560" y="344" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::setPaused()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::releaseAll()">
+<rect x="1048" y="344" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="1066" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="1066" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::releaseAll()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::changeEvent()">
+<rect x="56" y="462" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::changeEvent()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="GamePlayWidget::focusOutEvent()">
+<rect x="56" y="580" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GamePlayWidget::focusOutEvent()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="GamePlayWidget::releaseInput()">
+<rect x="560" y="580" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="578" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="578" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GamePlayWidget::releaseInput()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="GamePlayWidget::setKeyBindings()">
+<rect x="56" y="698" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="724" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="751" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GamePlayWidget::setKeyBindings()</text>
+</g>
+<text x="560" y="253" text-anchor="middle" font-size="16" font-weight="400" fill="#7953a0">继续 · false</text>
+<text x="488" y="371" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">暂停请求 · true</text>
+<text x="984" y="371" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">清 held/pressed</text>
+<text x="469" y="489" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">01 清物理键</text>
+<text x="611" y="433" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">02 setPaused(true)</text>
+<text x="488" y="620" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">失焦</text>
+<text x="564" y="725" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">重绑时清理</text>
+<text x="1070" y="607" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">清会话动作</text>
+<text x="956" y="724" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">状态切换</text>
+<text x="956" y="747" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">清 held、pressed 和时间余量</text>
+</g>
+</svg>

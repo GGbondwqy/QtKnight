@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="976" height="656" viewBox="0 32 976 656" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">交互条件校验与结果提交</title>
+<desc id="description">校验矩形和 pressed，按 kind 更新状态。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="976" height="688" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">交互条件校验与结果提交</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">校验矩形和 pressed，按 kind 更新状态。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<path d="M202,153 L209,153 M214,153 L221,153 M226,153 L232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<path d="M350,153 L352,153 M357,153 L359,153 M364,153 L366,153 M371,153 L373,153 M378,153 L380,153" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="380,153 371,157 371,149" fill="#7953a0"/>
+<text x="390" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">Qt 回调</text>
+<line x1="56" y1="177" x2="920" y2="177" stroke="#dbe3eb" />
+<polyline points="416,249 560,249" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,249 551,253 551,245" fill="#314d6a"/>
+<path d="M560,276 L553,276 M548,276 L541,276 M536,276 L529,276 M524,276 L517,276 M512,276 L505,276 M500,276 L493,276 M488,276 L481,276 M476,276 L469,276 M464,276 L457,276 M452,276 L445,276 M440,276 L433,276 M428,276 L421,276" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="416,276 425,272 425,280" fill="#227461"/>
+<polyline points="236,298 236,616" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="236,380 560,380" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,380 551,384 551,376" fill="#314d6a"/>
+<polyline points="236,498 560,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,498 551,502 551,494" fill="#314d6a"/>
+<polyline points="236,616 560,616" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,616 551,620 551,612" fill="#314d6a"/>
+<path d="M740,534 L740,541 M740,546 L740,553 M740,558 L740,565 M740,570 L740,577" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,580 736,571 744,571" fill="#227461"/>
+<g class="function" data-module="servicelib" data-function="GameSession::resolveInteractions()">
+<rect x="56" y="226" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::resolveInteractions()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="EntityObject::bounds()">
+<rect x="560" y="226" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="578" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="578" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">EntityObject::bounds()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="PlayerObject::heal()">
+<rect x="560" y="344" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="578" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="578" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">PlayerObject::heal()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="DoorObject::canOpen()">
+<rect x="560" y="462" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="578" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="578" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">DoorObject::canOpen()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::writeProgress()">
+<rect x="560" y="580" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::writeProgress()</text>
+</g>
+<text x="488" y="240" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">读取矩形</text>
+<text x="488" y="297" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">QRectF</text>
+<text x="398" y="371" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">Pickup · amount</text>
+<text x="398" y="489" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">player, requiredEnemyAlive</text>
+<text x="398" y="607" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">Checkpoint / Exit 已提交</text>
+<text x="753" y="562" text-anchor="start" font-size="16" font-weight="400" fill="#227461">Exit 且返回 true</text>
+<text x="56" y="363" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">输入条件</text>
+<text x="56" y="386" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">矩形相交</text>
+<text x="56" y="409" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">主动交互取按下沿</text>
+<text x="56" y="481" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">状态提交</text>
+<text x="56" y="504" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">activated / open</text>
+<text x="56" y="527" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">更新检查点或完成记录</text>
+</g>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="774" viewBox="0 32 1464 774" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">音效资源初始化与反馈播放</title>
+<desc id="description">初始化资源与音量，窗口在推进后消费反馈队列。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="806" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">音效资源初始化与反馈播放</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">初始化资源与音量，窗口在推进后消费反馈队列。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<path d="M202,153 L209,153 M214,153 L221,153 M226,153 L232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<path d="M350,153 L352,153 M357,153 L359,153 M364,153 L366,153 M371,153 L373,153 M378,153 L380,153" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="380,153 371,157 371,149" fill="#7953a0"/>
+<text x="390" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">Qt 回调</text>
+<line x1="56" y1="177" x2="1408" y2="177" stroke="#dbe3eb" />
+<polyline points="236,298 236,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="416,262 560,262" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,262 551,266 551,258" fill="#314d6a"/>
+<polyline points="236,380 560,380" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,380 551,384 551,376" fill="#314d6a"/>
+<polyline points="236,498 560,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,498 551,502 551,494" fill="#314d6a"/>
+<polyline points="416,616 560,616" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,616 551,620 551,612" fill="#314d6a"/>
+<path d="M920,616 L927,616 M932,616 L939,616 M944,616 L951,616 M956,616 L963,616 M968,616 L975,616 M980,616 L987,616 M992,616 L999,616 M1004,616 L1011,616 M1016,616 L1023,616 M1028,616 L1035,616 M1040,616 L1047,616" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,616 1039,620 1039,612" fill="#227461"/>
+<polyline points="236,652 236,666 1228,666 1228,652" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1228,652 1232,661 1224,661" fill="#314d6a"/>
+<path d="M416,734 L418,734 M423,734 L425,734 M430,734 L432,734 M437,734 L439,734 M444,734 L446,734 M451,734 L453,734 M458,734 L460,734 M465,734 L467,734 M472,734 L474,734 M479,734 L481,734 M486,734 L488,734 M493,734 L495,734 M500,734 L502,734 M507,734 L509,734 M514,734 L516,734 M521,734 L523,734 M528,734 L530,734 M535,734 L537,734 M542,734 L544,734 M549,734 L551,734 M556,734 L558,734" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,734 551,738 551,730" fill="#7953a0"/>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::MainWindow()">
+<rect x="56" y="226" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::MainWindow()</text>
+</g>
+<g class="function" data-module="visuallib" data-function="AudioPlayer::AudioPlayer()">
+<rect x="560" y="226" width="360" height="72" rx="10" fill="#f2ecfa" stroke="#755095" stroke-width="1.25"/>
+<text x="578" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#755095">visuallib</text>
+<text x="578" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">AudioPlayer::AudioPlayer()</text>
+</g>
+<g class="function" data-module="visuallib" data-function="AudioPlayer::loadFromDirectory()">
+<rect x="560" y="344" width="360" height="72" rx="10" fill="#f2ecfa" stroke="#755095" stroke-width="1.25"/>
+<text x="578" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#755095">visuallib</text>
+<text x="578" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">AudioPlayer::loadFromDirectory()</text>
+</g>
+<g class="function" data-module="visuallib" data-function="AudioPlayer::setVolumes()">
+<rect x="560" y="462" width="360" height="72" rx="10" fill="#f2ecfa" stroke="#755095" stroke-width="1.25"/>
+<text x="578" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#755095">visuallib</text>
+<text x="578" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">AudioPlayer::setVolumes()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::onFrame()">
+<rect x="56" y="580" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::onFrame()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::takeFeedback()">
+<rect x="560" y="580" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::takeFeedback()</text>
+</g>
+<g class="function" data-module="visuallib" data-function="AudioPlayer::play()">
+<rect x="1048" y="580" width="360" height="72" rx="10" fill="#f2ecfa" stroke="#755095" stroke-width="1.25"/>
+<text x="1066" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#755095">visuallib</text>
+<text x="1066" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">AudioPlayer::play()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::buildPages()">
+<rect x="56" y="698" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="724" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="751" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::buildPages()</text>
+</g>
+<g class="function" data-module="visuallib" data-function="AudioPlayer::playMenuSound()">
+<rect x="560" y="698" width="360" height="72" rx="10" fill="#f2ecfa" stroke="#755095" stroke-width="1.25"/>
+<text x="578" y="724" text-anchor="start" font-size="14" font-weight="700" fill="#755095">visuallib</text>
+<text x="578" y="751" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">AudioPlayer::playMenuSound()</text>
+</g>
+<text x="488" y="253" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">01 构造</text>
+<text x="398" y="371" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">02 directory</text>
+<text x="398" y="489" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">03 masterVolume, effectsVolume</text>
+<text x="488" y="607" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">取出并清空</text>
+<text x="984" y="607" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">Feedback</text>
+<text x="741" y="685" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">逐条调用</text>
+<text x="488" y="725" text-anchor="middle" font-size="16" font-weight="400" fill="#7953a0">MenuSound</text>
+<text x="1048" y="369" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">资源读取失败</text>
+<text x="1048" y="392" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">返回 false 并填写 errorMessage</text>
+<text x="1048" y="415" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">保留已加载音效</text>
+</g>
+</svg>

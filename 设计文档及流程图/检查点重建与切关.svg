@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="774" viewBox="0 32 1464 774" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">检查点重建与切关</title>
+<desc id="description">两个入口共用候选 World，切关先写入新起点。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="806" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">检查点重建与切关</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">两个入口共用候选 World，切关先写入新起点。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<path d="M202,153 L209,153 M214,153 L221,153 M226,153 L232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<path d="M350,153 L352,153 M357,153 L359,153 M364,153 L366,153 M371,153 L373,153 M378,153 L380,153" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="380,153 371,157 371,149" fill="#7953a0"/>
+<text x="390" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">Qt 回调</text>
+<line x1="56" y1="177" x2="1408" y2="177" stroke="#dbe3eb" />
+<text x="56" y="208" text-anchor="start" font-size="19" font-weight="700" fill="#172d43">入口函数</text>
+<text x="560" y="208" text-anchor="start" font-size="19" font-weight="700" fill="#172d43">调用顺序</text>
+<text x="1048" y="208" text-anchor="start" font-size="19" font-weight="700" fill="#172d43">子调用</text>
+<path d="M236,298 L236,300 M236,305 L236,307 M236,312 L236,314 M236,319 L236,321 M236,326 L236,328 M236,333 L236,335 M236,340 L236,342" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="236,344 232,335 240,335" fill="#7953a0"/>
+<path d="M56,262 L54,262 M49,262 L47,262 M42,262 L40,262 M35,262 L33,262 M28,262 L28,264 M28,269 L28,271 M28,276 L28,278 M28,283 L28,285 M28,290 L28,292 M28,297 L28,299 M28,304 L28,306 M28,311 L28,313 M28,318 L28,320 M28,325 L28,327 M28,332 L28,334 M28,339 L28,341 M28,346 L28,348 M28,353 L28,355 M28,360 L28,362 M28,367 L28,369 M28,374 L28,376 M28,381 L28,383 M28,388 L28,390 M28,395 L28,397 M28,402 L28,404 M28,409 L28,411 M28,416 L28,418 M28,423 L28,425 M28,430 L28,432 M28,437 L28,439 M28,440 L30,440 M35,440 L37,440 M42,440 L44,440 M49,440 L51,440 M56,440 L58,440 M63,440 L65,440 M70,440 L72,440 M77,440 L79,440 M84,440 L86,440 M91,440 L93,440 M98,440 L100,440 M105,440 L107,440 M112,440 L114,440 M119,440 L121,440 M126,440 L128,440 M133,440 L135,440 M140,440 L142,440 M147,440 L149,440 M154,440 L156,440 M161,440 L163,440 M163,440 L163,442 M163,447 L163,449 M163,454 L163,456 M163,461 L163,462" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="163,462 159,453 167,453" fill="#7953a0"/>
+<polyline points="416,380 442,380 442,734" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="416,498 442,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="442,498 560,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,498 551,502 551,494" fill="#314d6a"/>
+<polyline points="442,616 560,616" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,616 551,620 551,612" fill="#314d6a"/>
+<polyline points="442,734 560,734" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,734 551,738 551,730" fill="#314d6a"/>
+<path d="M740,534 L740,541 M740,546 L740,553 M740,558 L740,565 M740,570 L740,577" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,580 736,571 744,571" fill="#227461"/>
+<path d="M740,652 L740,659 M740,664 L740,671 M740,676 L740,683 M740,688 L740,695" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,698 736,689 744,689" fill="#227461"/>
+<path d="M864,534 L864,541 M864,546 L864,548 M864,548 L871,548 M876,548 L883,548 M888,548 L895,548 M900,548 L907,548 M912,548 L919,548 M924,548 L931,548 M936,548 L943,548 M948,548 L955,548 M960,548 L967,548 M972,548 L977,548 M977,548 L977,555 M977,560 L977,567 M977,572 L977,579 M977,584 L977,591 M977,596 L977,603 M977,608 L977,615 M977,620 L977,627 M977,632 L977,639 M977,644 L977,651 M977,656 L977,663 M977,668 L977,675 M977,680 L977,686 M977,686 L970,686 M965,686 L958,686 M953,686 L946,686 M941,686 L934,686 M929,686 L922,686 M917,686 L910,686 M905,686 L898,686 M893,686 L886,686 M881,686 L874,686 M869,686 L864,686 M864,686 L864,693" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="864,698 860,689 868,689" fill="#227461"/>
+<polyline points="920,734 1048,734" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,734 1039,738 1039,730" fill="#314d6a"/>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::buildPages()">
+<rect x="56" y="226" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::buildPages()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::retryCheckpoint()">
+<rect x="56" y="344" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::retryCheckpoint()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::nextLevel()">
+<rect x="56" y="462" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::nextLevel()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::prepareLevel()">
+<rect x="560" y="462" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::prepareLevel()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::writeProgress()">
+<rect x="560" y="580" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::writeProgress()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::activateLevel()">
+<rect x="560" y="698" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="724" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="751" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::activateLevel()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::releaseAll()">
+<rect x="1048" y="698" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="1066" y="724" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="1066" y="751" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::releaseAll()</text>
+</g>
+<text x="249" y="326" text-anchor="start" font-size="16" font-weight="400" fill="#7953a0">重建本关</text>
+<text x="126" y="430" text-anchor="middle" font-size="16" font-weight="400" fill="#7953a0">切换下一关</text>
+<text x="501" y="488" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">01 准备 World</text>
+<text x="501" y="606" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">02 仅切关</text>
+<text x="501" y="724" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">03 World&amp;&amp;</text>
+<text x="753" y="562" text-anchor="start" font-size="16" font-weight="400" fill="#227461">true · prepared</text>
+<text x="753" y="680" text-anchor="start" font-size="16" font-weight="400" fill="#227461">true · 经入口交付 prepared</text>
+<text x="991" y="620" text-anchor="start" font-size="16" font-weight="400" fill="#227461">复活 · prepared</text>
+<text x="984" y="725" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">清 held/pressed</text>
+<text x="56" y="598" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">prepareLevel 参数</text>
+<text x="56" y="621" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">复活  levelId · restoreCheckpoint=true</text>
+<text x="56" y="644" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">切关  目标 levelId · restoreCheckpoint=false</text>
+<text x="56" y="716" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">失败时返回 false</text>
+<text x="56" y="739" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">填写 errorMessage，保留原 World 与槽文件</text>
+</g>
+</svg>

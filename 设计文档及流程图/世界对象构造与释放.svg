@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="656" viewBox="0 32 1464 656" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">世界对象构造与释放</title>
+<desc id="description">构造时初始化公共字段，替换 World 时析构旧实体。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="688" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">世界对象构造与释放</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">构造时初始化公共字段，替换 World 时析构旧实体。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<path d="M202,153 L209,153 M214,153 L221,153 M226,153 L232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<path d="M350,153 L352,153 M357,153 L359,153 M364,153 L366,153 M371,153 L373,153 M378,153 L380,153" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="380,153 371,157 371,149" fill="#7953a0"/>
+<text x="390" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">Qt 回调</text>
+<line x1="56" y1="177" x2="1408" y2="177" stroke="#dbe3eb" />
+<polyline points="416,262 560,262" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,262 551,266 551,258" fill="#314d6a"/>
+<polyline points="236,416 236,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="416,380 560,380" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,380 551,384 551,376" fill="#314d6a"/>
+<polyline points="236,498 560,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,498 551,502 551,494" fill="#314d6a"/>
+<polyline points="920,262 982,262 982,362 1048,362" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,362 1039,366 1039,358" fill="#314d6a"/>
+<polyline points="920,394 1048,394" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,394 1039,398 1039,390" fill="#314d6a"/>
+<polyline points="1228,416 1228,462" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1228,462 1224,453 1232,453" fill="#314d6a"/>
+<polyline points="920,498 1048,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,498 1039,502 1039,494" fill="#314d6a"/>
+<path d="M416,616 L423,616 M428,616 L435,616 M440,616 L447,616 M452,616 L459,616 M464,616 L471,616 M476,616 L483,616 M488,616 L495,616 M500,616 L507,616 M512,616 L519,616 M524,616 L531,616 M536,616 L543,616 M548,616 L555,616" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,616 551,620 551,612" fill="#227461"/>
+<g class="function" data-module="servicelib" data-function="GameSession::GameSession()">
+<rect x="56" y="226" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::GameSession()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="PlayerObject::PlayerObject()">
+<rect x="560" y="226" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="578" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="578" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">PlayerObject::PlayerObject()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::prepareLevel()">
+<rect x="56" y="344" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::prepareLevel()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="EnemyObject::EnemyObject()">
+<rect x="560" y="344" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="578" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="578" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">EnemyObject::EnemyObject()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="CharacterObject::CharacterObject()">
+<rect x="1048" y="344" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="1066" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="1066" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">CharacterObject::CharacterObject()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="MapObject::MapObject()">
+<rect x="560" y="462" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="578" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="578" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MapObject::MapObject()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="EntityObject::EntityObject()">
+<rect x="1048" y="462" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="1066" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="1066" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">EntityObject::EntityObject()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::activateLevel()">
+<rect x="56" y="580" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::activateLevel()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="EntityObject::~EntityObject()">
+<rect x="560" y="580" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="578" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="578" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">EntityObject::~EntityObject()</text>
+</g>
+<text x="488" y="253" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">World.player</text>
+<text x="488" y="371" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">生成 EnemyObject</text>
+<text x="398" y="489" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">经机关派生类</text>
+<text x="985" y="252" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">size, maxHealth</text>
+<text x="984" y="385" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">size, maxHealth</text>
+<text x="1241" y="444" text-anchor="start" font-size="16" font-weight="400" fill="#314d6a">size</text>
+<text x="984" y="489" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">默认 size</text>
+<text x="488" y="607" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">旧实体销毁</text>
+</g>
+</svg>

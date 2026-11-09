@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="774" viewBox="0 32 1464 774" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">敌人决策与移动碰撞</title>
+<desc id="description">step() 汇集规则结果，写回角色状态后结算战斗。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="806" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">敌人决策与移动碰撞</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">step() 汇集规则结果，写回角色状态后结算战斗。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<path d="M202,153 L209,153 M214,153 L221,153 M226,153 L232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<path d="M350,153 L352,153 M357,153 L359,153 M364,153 L366,153 M371,153 L373,153 M378,153 L380,153" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="380,153 371,157 371,149" fill="#7953a0"/>
+<text x="390" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">Qt 回调</text>
+<line x1="56" y1="177" x2="1408" y2="177" stroke="#dbe3eb" />
+<polyline points="416,249 560,249" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,249 551,253 551,245" fill="#314d6a"/>
+<path d="M560,276 L553,276 M548,276 L541,276 M536,276 L529,276 M524,276 L517,276 M512,276 L505,276 M500,276 L493,276 M488,276 L481,276 M476,276 L469,276 M464,276 L457,276 M452,276 L445,276 M440,276 L433,276 M428,276 L421,276" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="416,276 425,272 425,280" fill="#227461"/>
+<polyline points="236,298 236,734" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="236,380 560,380" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,380 551,384 551,376" fill="#314d6a"/>
+<polyline points="236,498 560,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,498 551,502 551,494" fill="#314d6a"/>
+<polyline points="236,616 560,616" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,616 551,620 551,612" fill="#314d6a"/>
+<polyline points="236,734 560,734" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,734 551,738 551,730" fill="#314d6a"/>
+<path d="M740,298 L740,305 M740,310 L740,317 M740,322 L740,329 M740,334 L740,341" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,344 736,335 744,335" fill="#227461"/>
+<polyline points="236,226 236,201 1436,201 1436,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1436,380 1408,380" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1408,380 1417,376 1417,384" fill="#314d6a"/>
+<polyline points="1436,498 1408,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1408,498 1417,494 1417,502" fill="#314d6a"/>
+<path d="M560,367 L553,367 M548,367 L541,367 M536,367 L529,367 M524,367 L517,367 M512,367 L505,367 M502,367 L502,360 M502,355 L502,348 M502,343 L502,336 M502,331 L502,324 M502,319 L502,312 M502,307 L502,300 M502,295 L502,288 M502,286 L495,286 M490,286 L483,286 M478,286 L471,286 M466,286 L459,286 M454,286 L447,286 M442,286 L435,286 M430,286 L423,286 M418,286 L416,286" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="416,286 425,282 425,290" fill="#227461"/>
+<path d="M740,534 L740,541 M740,546 L740,553 M740,558 L740,565 M740,570 L740,577" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,580 736,571 744,571" fill="#227461"/>
+<path d="M1228,534 L1228,541 M1228,546 L1228,553 M1228,558 L1228,565 M1228,570 L1228,577 M1228,582 L1228,589 M1228,594 L1228,601 M1228,606 L1228,613 M1228,616 L1221,616 M1216,616 L1209,616 M1204,616 L1197,616 M1192,616 L1185,616 M1180,616 L1173,616 M1168,616 L1161,616 M1156,616 L1149,616 M1144,616 L1137,616 M1132,616 L1125,616 M1120,616 L1113,616 M1108,616 L1101,616 M1096,616 L1089,616 M1084,616 L1077,616 M1072,616 L1065,616 M1060,616 L1053,616 M1048,616 L1041,616 M1036,616 L1029,616 M1024,616 L1017,616 M1012,616 L1005,616 M1000,616 L993,616 M988,616 L981,616 M976,616 L969,616 M964,616 L957,616 M952,616 L945,616 M940,616 L933,616 M928,616 L921,616" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="920,616 929,612 929,620" fill="#227461"/>
+<path d="M740,652 L740,659 M740,664 L740,671 M740,676 L740,683 M740,688 L740,695" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,698 736,689 744,689" fill="#227461"/>
+<g class="function" data-module="servicelib" data-function="GameSession::step()">
+<rect x="56" y="226" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::step()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="EntityObject::bounds()">
+<rect x="560" y="226" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="578" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="578" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">EntityObject::bounds()</text>
+</g>
+<g class="function" data-module="algorithmlib" data-function="GameRules::decideEnemy()">
+<rect x="560" y="344" width="360" height="72" rx="10" fill="#fff3df" stroke="#8b5f1c" stroke-width="1.25"/>
+<text x="578" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#8b5f1c">algorithmlib</text>
+<text x="578" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameRules::decideEnemy()</text>
+</g>
+<g class="function" data-module="algorithmlib" data-function="GameRules::applyGravity()">
+<rect x="560" y="462" width="360" height="72" rx="10" fill="#fff3df" stroke="#8b5f1c" stroke-width="1.25"/>
+<text x="578" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#8b5f1c">algorithmlib</text>
+<text x="578" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameRules::applyGravity()</text>
+</g>
+<g class="function" data-module="algorithmlib" data-function="GameRules::moveAndCollide()">
+<rect x="560" y="580" width="360" height="72" rx="10" fill="#fff3df" stroke="#8b5f1c" stroke-width="1.25"/>
+<text x="578" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#8b5f1c">algorithmlib</text>
+<text x="578" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameRules::moveAndCollide()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::resolveCombat()">
+<rect x="560" y="698" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="724" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="751" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::resolveCombat()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="MapObject::isBlocking()">
+<rect x="1048" y="344" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="1066" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="1066" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MapObject::isBlocking()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="DoorObject::isBlocking()">
+<rect x="1048" y="462" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="1066" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="1066" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">DoorObject::isBlocking()</text>
+</g>
+<text x="488" y="240" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">01 取矩形</text>
+<text x="488" y="267" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">QRectF</text>
+<text x="398" y="371" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">02 EnemyInput</text>
+<text x="398" y="489" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">03 计算重力</text>
+<text x="398" y="607" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">05 bounds, velocity, solidBounds</text>
+<text x="398" y="725" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">06 碰撞修正后结算</text>
+<text x="753" y="326" text-anchor="start" font-size="16" font-weight="400" fill="#227461">bounds / targetBounds</text>
+<text x="994" y="192" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">04 构造障碍集合</text>
+<text x="1048" y="331" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">通用查询默认 false</text>
+<text x="1048" y="449" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">kind == Door &amp;&amp; !open</text>
+<text x="514" y="333" text-anchor="start" font-size="16" font-weight="400" fill="#227461">EnemyDecision</text>
+<text x="753" y="562" text-anchor="start" font-size="16" font-weight="400" fill="#227461">velocity</text>
+<text x="1070" y="607" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">solidBounds · 经 step</text>
+<text x="753" y="680" text-anchor="start" font-size="16" font-weight="400" fill="#227461">MovementResult · 经 step</text>
+<text x="1048" y="722" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">step() 写回</text>
+<text x="1048" y="745" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">position, velocity, onGround</text>
+<text x="1048" y="768" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">敌人 state 和 moveDirection</text>
+</g>
+</svg>

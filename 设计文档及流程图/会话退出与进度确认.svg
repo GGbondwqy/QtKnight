@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="656" viewBox="0 32 1464 656" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">会话退出与进度确认</title>
+<desc id="description">界面获取确认结果，成功处理进度后结束会话。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="688" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">会话退出与进度确认</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">界面获取确认结果，成功处理进度后结束会话。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<path d="M202,153 L209,153 M214,153 L221,153 M226,153 L232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<path d="M350,153 L352,153 M357,153 L359,153 M364,153 L366,153 M371,153 L373,153 M378,153 L380,153" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="380,153 371,157 371,149" fill="#7953a0"/>
+<text x="390" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">Qt 回调</text>
+<line x1="56" y1="177" x2="1408" y2="177" stroke="#dbe3eb" />
+<path d="M416,262 L418,262 M423,262 L425,262 M430,262 L432,262 M437,262 L439,262 M444,262 L446,262 M451,262 L453,262 M458,262 L460,262 M465,262 L467,262 M472,262 L474,262 M479,262 L481,262 M486,262 L488,262 M493,262 L495,262 M500,262 L502,262 M507,262 L509,262 M514,262 L516,262 M521,262 L523,262 M528,262 L530,262 M535,262 L537,262 M542,262 L544,262 M549,262 L551,262 M556,262 L558,262 M563,262 L565,262 M570,262 L572,262 M577,262 L579,262 M584,262 L586,262 M591,262 L593,262 M598,262 L600,262 M605,262 L607,262 M612,262 L614,262 M619,262 L621,262 M626,262 L628,262 M633,262 L635,262 M640,262 L642,262 M647,262 L649,262 M654,262 L656,262 M661,262 L663,262 M668,262 L670,262 M675,262 L677,262 M682,262 L684,262 M689,262 L691,262 M696,262 L698,262 M703,262 L705,262 M710,262 L712,262 M717,262 L719,262 M724,262 L726,262 M731,262 L733,262 M738,262 L740,262 M740,262 L740,264 M740,269 L740,271 M740,276 L740,278 M740,283 L740,285 M740,290 L740,292 M740,297 L740,299 M740,304 L740,306 M740,311 L740,313 M740,318 L740,320 M740,325 L740,327 M740,332 L740,334 M740,339 L740,341" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,344 736,335 744,335" fill="#7953a0"/>
+<polyline points="416,380 560,380" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,380 551,384 551,376" fill="#314d6a"/>
+<polyline points="920,367 1048,367" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,367 1039,371 1039,363" fill="#314d6a"/>
+<path d="M1048,394 L1041,394 M1036,394 L1029,394 M1024,394 L1017,394 M1012,394 L1005,394 M1000,394 L993,394 M988,394 L981,394 M976,394 L969,394 M964,394 L957,394 M952,394 L945,394 M940,394 L933,394 M928,394 L921,394" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="920,394 929,390 929,398" fill="#227461"/>
+<path d="M740,416 L740,423 M740,428 L740,435 M740,440 L740,447 M740,452 L740,459" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,462 736,453 744,453" fill="#227461"/>
+<polyline points="236,416 236,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="236,498 560,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,498 551,502 551,494" fill="#314d6a"/>
+<path d="M56,262 L54,262 M49,262 L47,262 M42,262 L40,262 M35,262 L33,262 M28,262 L28,264 M28,269 L28,271 M28,276 L28,278 M28,283 L28,285 M28,290 L28,292 M28,297 L28,299 M28,304 L28,306 M28,311 L28,313 M28,318 L28,320 M28,325 L28,327 M28,332 L28,334 M28,339 L28,341 M28,346 L28,348 M28,353 L28,355 M28,360 L28,362 M28,367 L28,369 M28,374 L28,376 M28,381 L28,383 M28,388 L28,390 M28,395 L28,397 M28,402 L28,404 M28,409 L28,411 M28,416 L28,418 M28,423 L28,425 M28,430 L28,432 M28,437 L28,439 M28,444 L28,446 M28,451 L28,453 M28,458 L28,460 M28,465 L28,467 M28,472 L28,474 M28,479 L28,481 M28,486 L28,488 M28,493 L28,495 M28,500 L28,502 M28,507 L28,509 M28,514 L28,516 M28,519 L30,519 M35,519 L37,519 M42,519 L44,519 M49,519 L51,519 M56,519 L58,519 M63,519 L65,519 M70,519 L72,519 M77,519 L79,519 M84,519 L86,519 M91,519 L93,519 M98,519 L100,519 M105,519 L107,519 M112,519 L114,519 M119,519 L121,519 M126,519 L128,519 M133,519 L135,519 M140,519 L142,519 M147,519 L149,519 M154,519 L156,519 M161,519 L163,519 M168,519 L170,519 M175,519 L177,519 M182,519 L184,519 M189,519 L191,519 M196,519 L198,519 M203,519 L205,519 M210,519 L212,519 M217,519 L219,519 M224,519 L226,519 M231,519 L233,519 M238,519 L240,519 M245,519 L247,519 M252,519 L254,519 M259,519 L261,519 M266,519 L268,519 M273,519 L275,519 M280,519 L282,519 M287,519 L289,519 M294,519 L296,519 M301,519 L303,519 M308,519 L310,519 M315,519 L317,519 M322,519 L324,519 M329,519 L331,519 M336,519 L338,519 M343,519 L345,519 M350,519 L352,519 M357,519 L359,519 M364,519 L366,519 M371,519 L373,519 M378,519 L380,519 M385,519 L387,519 M392,519 L394,519 M399,519 L401,519 M406,519 L408,519 M413,519 L415,519 M420,519 L422,519 M427,519 L429,519 M434,519 L436,519 M441,519 L443,519 M448,519 L450,519 M455,519 L457,519 M462,519 L464,519 M469,519 L471,519 M476,519 L478,519 M483,519 L485,519 M490,519 L492,519 M497,519 L499,519 M504,519 L506,519 M511,519 L513,519 M518,519 L520,519 M525,519 L527,519 M532,519 L534,519 M539,519 L541,519 M546,519 L548,519 M553,519 L555,519" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,519 551,523 551,515" fill="#7953a0"/>
+<polyline points="920,485 1048,485" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,485 1039,489 1039,481" fill="#314d6a"/>
+<path d="M1048,512 L1041,512 M1036,512 L1029,512 M1024,512 L1017,512 M1012,512 L1005,512 M1000,512 L993,512 M988,512 L981,512 M976,512 L969,512 M964,512 L957,512 M952,512 L945,512 M940,512 L933,512 M928,512 L921,512" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="920,512 929,508 929,516" fill="#227461"/>
+<polyline points="740,534 740,616" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="740,616 1048,616" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,616 1039,620 1039,612" fill="#314d6a"/>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::buildPages()">
+<rect x="56" y="226" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::buildPages()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::closeEvent()">
+<rect x="56" y="344" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::closeEvent()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::confirmLeave()">
+<rect x="560" y="344" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="578" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="578" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::confirmLeave()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::hasUnsavedProgress()">
+<rect x="1048" y="344" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="1066" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="1066" y="397" text-anchor="start" font-size="17" font-weight="700" fill="#172d43">GameSession::hasUnsavedProgress()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::returnToMenu()">
+<rect x="560" y="462" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::returnToMenu()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::writeProgress()">
+<rect x="1048" y="462" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="1066" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="1066" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::writeProgress()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::releaseAll()">
+<rect x="1048" y="580" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="1066" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="1066" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::releaseAll()</text>
+</g>
+<text x="570" y="253" text-anchor="middle" font-size="16" font-weight="400" fill="#7953a0">返回菜单回调</text>
+<text x="488" y="371" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">01 确认离开</text>
+<text x="984" y="358" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">查询</text>
+<text x="984" y="415" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">bool</text>
+<text x="753" y="444" text-anchor="start" font-size="16" font-weight="400" fill="#227461">true · saveProgress</text>
+<text x="398" y="489" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">02 确认后执行</text>
+<text x="381" y="511" text-anchor="middle" font-size="16" font-weight="400" fill="#7953a0">菜单确认后执行</text>
+<text x="984" y="476" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">saveProgress</text>
+<text x="984" y="533" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">写入结果</text>
+<text x="894" y="607" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">离开成功</text>
+<text x="56" y="603" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">保存条件</text>
+<text x="56" y="626" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">saveProgress &amp;&amp; dirty_</text>
+<text x="56" y="649" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">失败返回 false，填写 errorMessage</text>
+</g>
+</svg>

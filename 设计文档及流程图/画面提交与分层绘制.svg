@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="774" viewBox="0 32 1464 774" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">画面提交与分层绘制</title>
+<desc id="description">画布借用 const World&amp;，按排序结果绘制后提交 HUD。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="806" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">画面提交与分层绘制</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">画布借用 const World&amp;，按排序结果绘制后提交 HUD。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<path d="M202,153 L209,153 M214,153 L221,153 M226,153 L232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<path d="M350,153 L352,153 M357,153 L359,153 M364,153 L366,153 M371,153 L373,153 M378,153 L380,153" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="380,153 371,157 371,149" fill="#7953a0"/>
+<text x="390" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">Qt 回调</text>
+<line x1="56" y1="177" x2="1408" y2="177" stroke="#dbe3eb" />
+<path d="M236,298 L236,300 M236,305 L236,307 M236,312 L236,314 M236,319 L236,321 M236,326 L236,328 M236,333 L236,335 M236,340 L236,342" fill="none" stroke="#7953a0" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="236,344 232,335 240,335" fill="#7953a0"/>
+<polyline points="416,367 560,367" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,367 551,371 551,363" fill="#314d6a"/>
+<path d="M560,394 L553,394 M548,394 L541,394 M536,394 L529,394 M524,394 L517,394 M512,394 L505,394 M500,394 L493,394 M488,394 L481,394 M476,394 L469,394 M464,394 L457,394 M452,394 L445,394 M440,394 L433,394 M428,394 L421,394" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="416,394 425,390 425,398" fill="#227461"/>
+<polyline points="236,416 236,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="236,498 560,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,498 551,502 551,494" fill="#314d6a"/>
+<path d="M740,416 L740,423 M740,428 L740,435 M740,440 L740,447 M740,452 L740,459" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,462 736,453 744,453" fill="#227461"/>
+<polyline points="740,534 740,734" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="920,498 1048,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,498 1039,502 1039,494" fill="#314d6a"/>
+<polyline points="740,616 1048,616" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,616 1039,620 1039,612" fill="#314d6a"/>
+<polyline points="740,734 1048,734" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,734 1039,738 1039,730" fill="#314d6a"/>
+<path d="M1228,534 L1228,541 M1228,546 L1228,553 M1228,558 L1228,565 M1228,570 L1228,577" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1228,580 1224,571 1232,571" fill="#227461"/>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::onFrame()">
+<rect x="56" y="226" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::onFrame()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="GamePlayWidget::paintEvent()">
+<rect x="56" y="344" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GamePlayWidget::paintEvent()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::world()">
+<rect x="560" y="344" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::world()</text>
+</g>
+<g class="function" data-module="visuallib" data-function="SceneRenderer::paint()">
+<rect x="560" y="462" width="360" height="72" rx="10" fill="#f2ecfa" stroke="#755095" stroke-width="1.25"/>
+<text x="578" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#755095">visuallib</text>
+<text x="578" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">SceneRenderer::paint()</text>
+</g>
+<g class="function" data-module="visuallib" data-function="SceneRenderer::buildDrawQueue()">
+<rect x="1048" y="462" width="360" height="72" rx="10" fill="#f2ecfa" stroke="#755095" stroke-width="1.25"/>
+<text x="1066" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#755095">visuallib</text>
+<text x="1066" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">SceneRenderer::buildDrawQueue()</text>
+</g>
+<g class="function" data-module="visuallib" data-function="SceneRenderer::drawEntity()">
+<rect x="1048" y="580" width="360" height="72" rx="10" fill="#f2ecfa" stroke="#755095" stroke-width="1.25"/>
+<text x="1066" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#755095">visuallib</text>
+<text x="1066" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">SceneRenderer::drawEntity()</text>
+</g>
+<g class="function" data-module="visuallib" data-function="SceneRenderer::drawHud()">
+<rect x="1048" y="698" width="360" height="72" rx="10" fill="#f2ecfa" stroke="#755095" stroke-width="1.25"/>
+<text x="1066" y="724" text-anchor="start" font-size="14" font-weight="700" fill="#755095">visuallib</text>
+<text x="1066" y="751" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">SceneRenderer::drawHud()</text>
+</g>
+<text x="249" y="326" text-anchor="start" font-size="16" font-weight="400" fill="#7953a0">请求重绘</text>
+<text x="488" y="358" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">查询</text>
+<text x="488" y="415" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">const World&amp;</text>
+<text x="398" y="489" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">World, viewport</text>
+<text x="753" y="444" text-anchor="start" font-size="16" font-weight="400" fill="#227461">只读借用</text>
+<text x="984" y="489" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">01 排序</text>
+<text x="894" y="607" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">02 逐项绘制</text>
+<text x="894" y="725" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">03 恢复屏幕坐标</text>
+<text x="1241" y="562" text-anchor="start" font-size="16" font-weight="400" fill="#227461">QList&lt;DrawItem&gt;</text>
+<text x="56" y="604" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">排序键</text>
+<text x="56" y="627" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">layer, kind, id</text>
+<text x="56" y="650" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">HUD 使用屏幕坐标</text>
+</g>
+</svg>
