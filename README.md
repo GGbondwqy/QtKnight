@@ -1,6 +1,6 @@
 # Qt Knight
 
-Qt Knight 的 `version2` 是一套面向 Windows 的 C++17 / Qt 6 单机游戏源码。头文件定义游戏对象和模块接口，对应的 `.cpp` 文件预留实现位置。
+Qt Knight 是一套面向 Windows 的 C++17 / Qt 6 单机游戏源码。头文件定义游戏对象和模块接口，对应的 `.cpp` 文件预留实现位置。
 
 在 Visual Studio 中选择「打开本地文件夹」，即可浏览仓库里的头文件和源文件。
 
