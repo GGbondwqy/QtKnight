@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="630" viewBox="0 32 1464 630" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">敌人攻击与命中</title>
+<desc id="description">移动修正后检查出手状态和水平距离，合格攻击立即进入冷却。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="662" fill="#ffffff"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">敌人攻击与命中</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">移动修正后检查出手状态和水平距离，合格攻击立即进入冷却。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<polyline points="202,153 232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<line x1="56" y1="177" x2="1408" y2="177" stroke="#dbe3eb"/>
+<polyline points="416,262 560,262" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<polygon points="560,262 551,266 551,258" fill="#227461"/>
+<polyline points="920,250 1048,250" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,250 1039,254 1039,246" fill="#314d6a"/>
+<polyline points="1048,277 920,277" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<polygon points="920,277 929,273 929,281" fill="#227461"/>
+<polyline points="740,298 740,460 1048,460" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,460 1039,464 1039,456" fill="#314d6a"/>
+<polyline points="1228,496 1228,553" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<polygon points="1228,553 1224,544 1232,544" fill="#227461"/>
+<g class="function" data-module="algorithmlib" data-function="GameRules::decideEnemy()">
+<rect x="56" y="226" width="360" height="72" rx="10" fill="#fff3df" stroke="#8b5f1c" stroke-width="1.25"/>
+<text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#8b5f1c">algorithmlib</text>
+<text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameRules::decideEnemy()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::resolveCombat()">
+<rect x="560" y="226" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::resolveCombat()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="EntityObject::bounds()">
+<rect x="1048" y="226" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="1066" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="1066" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">EntityObject::bounds()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="PlayerObject::takeDamage()">
+<rect x="1048" y="424" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="1066" y="450" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="1066" y="477" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">PlayerObject::takeDamage()</text>
+</g>
+<text x="488" y="253" text-anchor="middle" font-size="15" font-weight="400" fill="#227461">attackRequested</text>
+<text x="984" y="241" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">移动后查询</text>
+<text x="984" y="296" text-anchor="middle" font-size="15" font-weight="400" fill="#227461">双方矩形</text>
+<text x="894" y="450" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">同帧选中的伤害</text>
+<text x="1241" y="527" text-anchor="start" font-size="15" font-weight="400" fill="#227461">实际扣血量</text>
+<text x="56" y="369" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">resolveCombat() 出手条件</text>
+<text x="56" y="393" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">敌人存活且 state 为 Attack</text>
+<text x="56" y="417" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">attackCooldownFrames 为 0</text>
+<text x="56" y="441" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">双方中心 X 间距不超过 attackRange</text>
+<text x="56" y="500" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">冷却写回</text>
+<text x="56" y="524" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">范围通过即启动敌人攻击冷却</text>
+<text x="56" y="548" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">玩家无敌时也计入冷却</text>
+<text x="1048" y="581" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">结果</text>
+<text x="1048" y="605" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">无敌时实际扣血为 0</text>
+</g>
+</svg>

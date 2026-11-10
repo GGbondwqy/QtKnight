@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="828" viewBox="0 32 1464 828" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">会话状态机</title>
+<desc id="description">上方看主线和运行分支，下方查加载回退与离开结果。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="860" fill="#ffffff"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">会话状态机</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">上方看主线和运行分支，下方查加载回退与离开结果。</text>
+<line x1="56" y1="151" x2="1408" y2="151" stroke="#dbe3eb"/>
+<rect x="56" y="169" width="36" height="27" rx="5" fill="#e9eef4"/>
+<text x="74" y="188" text-anchor="middle" font-size="15" font-weight="700" fill="#314d6a">01</text>
+<text x="106" y="190" text-anchor="start" font-size="22" font-weight="700" fill="#172d43">进入关卡</text>
+<g class="transition" data-from="MainMenu" data-to="LevelSelection">
+<polyline points="276,251 430,251" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="430,251 421,255 421,247" fill="#314d6a"/>
+</g>
+<g class="transition" data-from="LevelSelection" data-to="Loading">
+<polyline points="650,251 804,251" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="804,251 795,255 795,247" fill="#314d6a"/>
+</g>
+<g class="transition" data-from="Loading" data-to="Playing">
+<polyline points="1024,251 1188,251" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1188,251 1179,255 1179,247" fill="#314d6a"/>
+</g>
+<g class="state" data-state="MainMenu">
+<rect x="56" y="224" width="220" height="54" rx="9" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="166.0" y="259" text-anchor="middle" font-size="21" font-weight="700" fill="#172d43">MainMenu</text>
+</g>
+<g class="state" data-state="LevelSelection">
+<rect x="430" y="224" width="220" height="54" rx="9" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="540.0" y="259" text-anchor="middle" font-size="21" font-weight="700" fill="#172d43">LevelSelection</text>
+</g>
+<g class="state" data-state="Loading">
+<rect x="804" y="224" width="220" height="54" rx="9" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="914.0" y="259" text-anchor="middle" font-size="21" font-weight="700" fill="#172d43">Loading</text>
+</g>
+<g class="state" data-state="Playing">
+<rect x="1188" y="224" width="220" height="54" rx="9" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="1298.0" y="259" text-anchor="middle" font-size="21" font-weight="700" fill="#172d43">Playing</text>
+</g>
+<text x="353" y="240" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">建档或打开选关</text>
+<text x="353" y="273" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">未选关继续</text>
+<text x="727" y="240" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">开始关卡</text>
+<text x="1106" y="240" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">启用成功</text>
+<line x1="56" y1="310" x2="1408" y2="310" stroke="#dbe3eb"/>
+<rect x="56" y="328" width="36" height="27" rx="5" fill="#e9eef4"/>
+<text x="74" y="347" text-anchor="middle" font-size="15" font-weight="700" fill="#314d6a">02</text>
+<text x="106" y="349" text-anchor="start" font-size="22" font-weight="700" fill="#172d43">运行中的分支</text>
+<g class="transition" data-from="Playing" data-to="Paused">
+<polyline points="470,430 306,430" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="306,430 315,426 315,434" fill="#314d6a"/>
+</g>
+<g class="transition" data-from="Paused" data-to="Playing">
+<polyline points="306,454 470,454" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="470,454 461,458 461,450" fill="#314d6a"/>
+</g>
+<g class="transition" data-from="Playing" data-to="Dead">
+<polyline points="730,440 890,440 890,400 1108,400" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1108,400 1099,404 1099,396" fill="#314d6a"/>
+</g>
+<g class="transition" data-from="Playing" data-to="LevelComplete">
+<polyline points="730,440 890,440 890,490 1108,490" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1108,490 1099,494 1099,486" fill="#314d6a"/>
+</g>
+<g class="state" data-state="Paused">
+<rect x="56" y="413" width="250" height="54" rx="9" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="181.0" y="448" text-anchor="middle" font-size="21" font-weight="700" fill="#172d43">Paused</text>
+</g>
+<g class="state-reference" data-ref="Playing">
+<rect x="470" y="413" width="260" height="54" rx="9" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="600.0" y="448" text-anchor="middle" font-size="21" font-weight="700" fill="#172d43">Playing</text>
+</g>
+<g class="state" data-state="Dead">
+<rect x="1108" y="373" width="300" height="54" rx="9" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="1258.0" y="408" text-anchor="middle" font-size="21" font-weight="700" fill="#172d43">Dead</text>
+</g>
+<g class="state" data-state="LevelComplete">
+<rect x="1108" y="463" width="300" height="54" rx="9" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="1258.0" y="498" text-anchor="middle" font-size="21" font-weight="700" fill="#172d43">LevelComplete</text>
+</g>
+<text x="388" y="420" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">暂停或失焦</text>
+<text x="388" y="477" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">继续</text>
+<text x="999" y="389" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">生命归零</text>
+<text x="999" y="479" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">通过出口</text>
+<line x1="56" y1="549" x2="1408" y2="549" stroke="#dbe3eb"/>
+<rect x="56" y="569" width="36" height="27" rx="5" fill="#e9eef4"/>
+<text x="74" y="588" text-anchor="middle" font-size="15" font-weight="700" fill="#314d6a">03</text>
+<text x="106" y="590" text-anchor="start" font-size="22" font-weight="700" fill="#172d43">加载入口与回退</text>
+<rect x="758" y="569" width="36" height="27" rx="5" fill="#e9eef4"/>
+<text x="776" y="588" text-anchor="middle" font-size="15" font-weight="700" fill="#314d6a">04</text>
+<text x="808" y="590" text-anchor="start" font-size="22" font-weight="700" fill="#172d43">离开与保存重试</text>
+<rect x="56" y="614" width="650" height="42" rx="5" fill="#edf3f8"/>
+<text x="72" y="641" text-anchor="start" font-size="15" font-weight="700" fill="#314d6a">发起状态</text>
+<text x="285" y="641" text-anchor="start" font-size="15" font-weight="700" fill="#314d6a">进入 Loading</text>
+<text x="534" y="641" text-anchor="start" font-size="15" font-weight="700" fill="#314d6a">失败返回</text>
+<rect x="758" y="614" width="650" height="42" rx="5" fill="#edf3f8"/>
+<text x="774" y="641" text-anchor="start" font-size="15" font-weight="700" fill="#314d6a">发起状态</text>
+<text x="1073" y="641" text-anchor="start" font-size="15" font-weight="700" fill="#314d6a">操作</text>
+<text x="1241" y="641" text-anchor="start" font-size="15" font-weight="700" fill="#314d6a">结果</text>
+<text x="72" y="686" text-anchor="start" font-size="16" font-weight="400" fill="#172d43">MainMenu</text>
+<g class="transition" data-from="MainMenu" data-to="Loading">
+<text x="285" y="686" text-anchor="start" font-size="16" font-weight="400" fill="#475d71">继续已选关存档</text>
+</g>
+<g class="transition" data-from="Loading" data-to="MainMenu" data-result="failure">
+<text x="534" y="686" text-anchor="start" font-size="16" font-weight="400" fill="#227461">MainMenu</text>
+</g>
+<line x1="56" y1="700" x2="706" y2="700" stroke="#dbe3eb"/>
+<text x="72" y="727" text-anchor="start" font-size="16" font-weight="400" fill="#172d43">LevelSelection</text>
+<g class="transition" data-from="LevelSelection" data-to="Loading">
+<text x="285" y="727" text-anchor="start" font-size="16" font-weight="400" fill="#475d71">开始关卡</text>
+</g>
+<g class="transition" data-from="Loading" data-to="LevelSelection" data-result="failure">
+<text x="534" y="727" text-anchor="start" font-size="16" font-weight="400" fill="#227461">LevelSelection</text>
+</g>
+<line x1="56" y1="741" x2="706" y2="741" stroke="#dbe3eb"/>
+<text x="72" y="768" text-anchor="start" font-size="16" font-weight="400" fill="#172d43">Dead</text>
+<g class="transition" data-from="Dead" data-to="Loading">
+<text x="285" y="768" text-anchor="start" font-size="16" font-weight="400" fill="#475d71">重试检查点</text>
+</g>
+<g class="transition" data-from="Loading" data-to="Dead" data-result="failure">
+<text x="534" y="768" text-anchor="start" font-size="16" font-weight="400" fill="#227461">Dead</text>
+</g>
+<line x1="56" y1="782" x2="706" y2="782" stroke="#dbe3eb"/>
+<text x="72" y="809" text-anchor="start" font-size="16" font-weight="400" fill="#172d43">LevelComplete</text>
+<g class="transition" data-from="LevelComplete" data-to="Loading">
+<text x="285" y="809" text-anchor="start" font-size="16" font-weight="400" fill="#475d71">有下一关时切换</text>
+</g>
+<g class="transition" data-from="Loading" data-to="LevelComplete" data-result="failure">
+<text x="534" y="809" text-anchor="start" font-size="16" font-weight="400" fill="#227461">LevelComplete</text>
+</g>
+<line x1="56" y1="823" x2="706" y2="823" stroke="#dbe3eb"/>
+<g class="transition" data-from="LevelSelection Playing Paused Dead LevelComplete" data-to="MainMenu">
+<text x="774" y="679" text-anchor="start" font-size="15" font-weight="400" fill="#172d43">LevelSelection / Playing / Paused</text>
+<text x="774" y="701" text-anchor="start" font-size="15" font-weight="400" fill="#172d43">Dead / LevelComplete</text>
+<text x="1073" y="690" text-anchor="start" font-size="16" font-weight="400" fill="#475d71">确认返回</text>
+<text x="1241" y="690" text-anchor="start" font-size="16" font-weight="400" fill="#172d43">MainMenu</text>
+</g>
+<line x1="758" y1="714" x2="1408" y2="714" stroke="#dbe3eb"/>
+<g class="transition" data-from="LevelComplete" data-to="LevelSelection">
+<text x="774" y="742" text-anchor="start" font-size="16" font-weight="400" fill="#172d43">LevelComplete</text>
+<text x="1073" y="742" text-anchor="start" font-size="16" font-weight="400" fill="#475d71">返回选关</text>
+<text x="1241" y="742" text-anchor="start" font-size="16" font-weight="400" fill="#172d43">LevelSelection</text>
+</g>
+<line x1="758" y1="756" x2="1408" y2="756" stroke="#dbe3eb"/>
+<g class="transition" data-from="LevelComplete" data-to="LevelComplete">
+<text x="774" y="784" text-anchor="start" font-size="16" font-weight="400" fill="#172d43">LevelComplete</text>
+<text x="1073" y="784" text-anchor="start" font-size="16" font-weight="400" fill="#475d71">重试未保存进度</text>
+<text x="1241" y="784" text-anchor="start" font-size="16" font-weight="400" fill="#172d43">LevelComplete</text>
+</g>
+<line x1="758" y1="798" x2="1408" y2="798" stroke="#dbe3eb"/>
+<text x="774" y="822" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">取消或操作失败时留在当前状态。</text>
+</g>
+</svg>

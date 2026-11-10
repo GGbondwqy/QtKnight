@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="790" viewBox="0 32 1464 790" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">会话退出与进度确认</title>
+<desc id="description">菜单与关窗共用确认，中央是成功退出的主线。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="822" fill="#ffffff"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">会话退出与进度确认</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">菜单与关窗共用确认，中央是成功退出的主线。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<polyline points="202,153 232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<line x1="56" y1="177" x2="1408" y2="177" stroke="#dbe3eb"/>
+<polyline points="236,280 236,306 650,306 650,338" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="650,338 646,329 654,329" fill="#314d6a"/>
+<polyline points="1228,280 1228,306 830,306 830,338" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="830,338 826,329 834,329" fill="#314d6a"/>
+<polyline points="920,360 1048,360" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,360 1039,364 1039,356" fill="#314d6a"/>
+<polyline points="1048,386 920,386" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<polygon points="920,386 929,382 929,390" fill="#227461"/>
+<polyline points="560,374 424,374" fill="none" stroke="#64778b" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<polygon points="424,374 433,370 433,378" fill="#64778b"/>
+<polyline points="740,410 740,502" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,502 736,493 744,493" fill="#314d6a"/>
+<polyline points="920,526 1048,526" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,526 1039,530 1039,522" fill="#314d6a"/>
+<polyline points="1048,552 920,552" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<polygon points="920,552 929,548 929,556" fill="#227461"/>
+<polyline points="560,538 424,538" fill="none" stroke="#64778b" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<polygon points="424,538 433,534 433,542" fill="#64778b"/>
+<polyline points="740,574 740,666" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,666 736,657 744,657" fill="#314d6a"/>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::buildPages()">
+<rect x="56" y="208" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="234" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="261" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::buildPages()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::closeEvent()">
+<rect x="1048" y="208" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="1066" y="234" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="1066" y="261" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::closeEvent()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="MainWindow::confirmLeave()">
+<rect x="560" y="338" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="578" y="364" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="578" y="391" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::confirmLeave()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::hasUnsavedProgress()">
+<rect x="1048" y="338" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="1066" y="364" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="1066" y="391" text-anchor="start" font-size="17" font-weight="700" fill="#172d43">GameSession::hasUnsavedProgress()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::returnToMenu()">
+<rect x="560" y="502" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="528" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="555" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::returnToMenu()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::writeProgress()">
+<rect x="1048" y="502" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="1066" y="528" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="1066" y="555" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::writeProgress()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::releaseAll()">
+<rect x="560" y="666" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="692" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="719" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::releaseAll()</text>
+</g>
+<text x="443" y="297" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">返回菜单回调</text>
+<text x="1029" y="297" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">系统关窗</text>
+<text x="984" y="351" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">查询</text>
+<text x="984" y="407" text-anchor="middle" font-size="15" font-weight="400" fill="#227461">未保存状态</text>
+<text x="56" y="369" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">取消离开</text>
+<text x="56" y="393" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">保持当前页，关窗请求被拒绝</text>
+<text x="754" y="466" text-anchor="start" font-size="16" font-weight="400" fill="#314d6a">确认后提交 saveProgress</text>
+<text x="984" y="517" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">需要保存</text>
+<text x="984" y="573" text-anchor="middle" font-size="15" font-weight="400" fill="#227461">写入结果</text>
+<text x="56" y="533" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">保存失败</text>
+<text x="56" y="557" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">显示 errorMessage，保留会话与旧档</text>
+<text x="754" y="630" text-anchor="start" font-size="16" font-weight="400" fill="#314d6a">保存成功或无需写入</text>
+<text x="740" y="774" text-anchor="middle" font-size="16" font-weight="700" fill="#172d43">回到主菜单或接受关窗</text>
+</g>
+</svg>

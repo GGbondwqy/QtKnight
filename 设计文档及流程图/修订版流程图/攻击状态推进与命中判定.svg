@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="934" viewBox="0 32 1464 934" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">攻击状态推进与命中判定</title>
+<desc id="description">攻击按下沿进入 pressed，逻辑步按攻击阶段发起或结算。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="966" fill="#ffffff"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">攻击状态推进与命中判定</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">攻击按下沿进入 pressed，逻辑步按攻击阶段发起或结算。</text>
+<polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="88,153 79,157 79,149" fill="#314d6a"/>
+<text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
+<polyline points="202,153 232,153" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<polygon points="232,153 223,157 223,149" fill="#227461"/>
+<text x="242" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">数据交接</text>
+<line x1="56" y1="177" x2="1408" y2="177" stroke="#dbe3eb"/>
+<polyline points="416,262 560,262" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,262 551,266 551,258" fill="#314d6a"/>
+<polyline points="920,262 1048,262" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,262 1039,266 1039,258" fill="#314d6a"/>
+<polyline points="1228,298 1228,346 236,346 236,386" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<polygon points="236,386 232,377 240,377" fill="#227461"/>
+<g class="function" data-module="QtKnightApp" data-function="GamePlayWidget::keyPressEvent()">
+<rect x="56" y="226" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GamePlayWidget::keyPressEvent()</text>
+</g>
+<g class="function" data-module="QtKnightApp" data-function="GamePlayWidget::updateActions()">
+<rect x="560" y="226" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
+<text x="578" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
+<text x="578" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GamePlayWidget::updateActions()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::setAction()">
+<rect x="1048" y="226" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="1066" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="1066" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::setAction()</text>
+</g>
+<text x="488" y="253" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">默认 J</text>
+<text x="984" y="253" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">Attack, true</text>
+<text x="728" y="337" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">pressed · Attack</text>
+<g transform="translate(0 160)">
+<polyline points="236,298 236,380" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="416,262 560,262" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,262 551,266 551,258" fill="#314d6a"/>
+<polyline points="236,380 560,380" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,380 551,384 551,376" fill="#314d6a"/>
+<polyline points="920,262 1048,262" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,262 1039,266 1039,258" fill="#314d6a"/>
+<path d="M740,298 L740,305 M740,310 L740,317 M740,322 L740,329 M740,334 L740,341" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="740,344 736,335 744,335" fill="#227461"/>
+<polyline points="920,367 1048,367" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,367 1039,371 1039,363" fill="#314d6a"/>
+<path d="M1048,394 L1041,394 M1036,394 L1029,394 M1024,394 L1017,394 M1012,394 L1005,394 M1000,394 L993,394 M988,394 L981,394 M976,394 L969,394 M964,394 L957,394 M952,394 L945,394 M940,394 L933,394 M928,394 L921,394" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="920,394 929,390 929,398" fill="#227461"/>
+<polyline points="740,416 740,734" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="740,498 1048,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,498 1039,502 1039,494" fill="#314d6a"/>
+<polyline points="740,616 1048,616" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,616 1039,620 1039,612" fill="#314d6a"/>
+<polyline points="740,734 1048,734" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,734 1039,738 1039,730" fill="#314d6a"/>
+<path d="M1228,534 L1228,541 M1228,546 L1228,553 M1228,558 L1228,565 M1228,570 L1228,577" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1228,580 1224,571 1232,571" fill="#227461"/>
+<path d="M1228,652 L1228,659 M1228,664 L1228,671 M1228,676 L1228,683 M1228,688 L1228,695" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1228,698 1224,689 1232,689" fill="#227461"/>
+<g class="function" data-module="servicelib" data-function="GameSession::step()">
+<rect x="56" y="226" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::step()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="PlayerObject::advanceAttack()">
+<rect x="560" y="226" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="578" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="578" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">PlayerObject::advanceAttack()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="PlayerObject::resetAttack()">
+<rect x="1048" y="226" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="1066" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="1066" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">PlayerObject::resetAttack()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::resolveCombat()">
+<rect x="560" y="344" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="578" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="578" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::resolveCombat()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="PlayerObject::spendEnergy()">
+<rect x="1048" y="344" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="1066" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="1066" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">PlayerObject::spendEnergy()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="EntityObject::bounds()">
+<rect x="1048" y="462" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="1066" y="488" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="1066" y="515" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">EntityObject::bounds()</text>
+</g>
+<g class="function" data-module="algorithmlib" data-function="GameRules::attackBounds()">
+<rect x="1048" y="580" width="360" height="72" rx="10" fill="#fff3df" stroke="#8b5f1c" stroke-width="1.25"/>
+<text x="1066" y="606" text-anchor="start" font-size="14" font-weight="700" fill="#8b5f1c">algorithmlib</text>
+<text x="1066" y="633" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameRules::attackBounds()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="CharacterObject::takeDamage()">
+<rect x="1048" y="698" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="1066" y="724" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="1066" y="751" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">CharacterObject::takeDamage()</text>
+</g>
+<text x="488" y="253" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">01 推进阶段</text>
+<text x="398" y="371" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">02 碰撞后读取 pressed</text>
+<text x="984" y="253" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">Recovery 结束</text>
+<text x="753" y="326" text-anchor="start" font-size="16" font-weight="400" fill="#227461">attackPhase</text>
+<text x="984" y="358" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">energyCost</text>
+<text x="984" y="415" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">true · Windup</text>
+<text x="894" y="489" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">Active · 取矩形</text>
+<text x="894" y="607" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">facingLeft, reach</text>
+<text x="894" y="725" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">damage · 命中且目标未记录</text>
+<text x="1241" y="562" text-anchor="start" font-size="16" font-weight="400" fill="#227461">QRectF</text>
+<text x="1241" y="680" text-anchor="start" font-size="16" font-weight="400" fill="#227461">矩形相交 · 经会话</text>
+<text x="56" y="485" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">发起条件</text>
+<text x="56" y="508" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">pressed 含 Attack，且 Idle、冷却归零</text>
+<text x="56" y="531" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">扣除 energyCost 成功后进入 Windup</text>
+<text x="56" y="603" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">同次攻击去重</text>
+<text x="56" y="626" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">用 attackHitTargets 记录目标编号</text>
+<text x="56" y="649" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">resetAttack() 清理记录</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="862" viewBox="0 32 1464 862" xml:lang="zh-CN" role="img" aria-labelledby="title description">
+<title id="title">敌人决策与移动碰撞</title>
+<desc id="description">沿左侧从上到下读取会话调度，右侧标出每步结果。</desc>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<rect x="0" y="0" width="1464" height="894" fill="#ffffff"/>
+<text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">敌人决策与移动碰撞</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">沿左侧从上到下读取会话调度，右侧标出每步结果。</text>
+<line x1="56" y1="151" x2="1408" y2="151" stroke="#dbe3eb"/>
+<polyline points="236,279 236,789" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="236,789 232,780 240,780" fill="#314d6a"/>
+<polyline points="236,330 560,330" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,330 551,334 551,326" fill="#314d6a"/>
+<polyline points="236,430 560,430" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,430 551,434 551,426" fill="#314d6a"/>
+<polyline points="236,522 560,522" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,522 551,526 551,518" fill="#314d6a"/>
+<polyline points="236,614 560,614" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,614 551,618 551,610" fill="#314d6a"/>
+<polyline points="236,706 560,706" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,706 551,710 551,702" fill="#314d6a"/>
+<polyline points="920,330 1048,330" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1048,330 1039,334 1039,326" fill="#314d6a"/>
+<g class="function" data-module="servicelib" data-function="GameSession::step()">
+<rect x="56" y="207" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="233" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="260" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::step()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="MapObject::isBlocking()">
+<rect x="560" y="294" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="578" y="320" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="578" y="347" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MapObject::isBlocking()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="DoorObject::isBlocking()">
+<rect x="1048" y="294" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="1066" y="320" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="1066" y="347" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">DoorObject::isBlocking()</text>
+</g>
+<g class="function" data-module="datamanagelib" data-function="EntityObject::bounds()">
+<rect x="560" y="394" width="360" height="72" rx="10" fill="#fcefeb" stroke="#99503f" stroke-width="1.25"/>
+<text x="578" y="420" text-anchor="start" font-size="14" font-weight="700" fill="#99503f">datamanagelib</text>
+<text x="578" y="447" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">EntityObject::bounds()</text>
+</g>
+<g class="function" data-module="algorithmlib" data-function="GameRules::decideEnemy()">
+<rect x="560" y="486" width="360" height="72" rx="10" fill="#fff3df" stroke="#8b5f1c" stroke-width="1.25"/>
+<text x="578" y="512" text-anchor="start" font-size="14" font-weight="700" fill="#8b5f1c">algorithmlib</text>
+<text x="578" y="539" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameRules::decideEnemy()</text>
+</g>
+<g class="function" data-module="algorithmlib" data-function="GameRules::applyGravity()">
+<rect x="560" y="578" width="360" height="72" rx="10" fill="#fff3df" stroke="#8b5f1c" stroke-width="1.25"/>
+<text x="578" y="604" text-anchor="start" font-size="14" font-weight="700" fill="#8b5f1c">algorithmlib</text>
+<text x="578" y="631" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameRules::applyGravity()</text>
+</g>
+<g class="function" data-module="algorithmlib" data-function="GameRules::moveAndCollide()">
+<rect x="560" y="670" width="360" height="72" rx="10" fill="#fff3df" stroke="#8b5f1c" stroke-width="1.25"/>
+<text x="578" y="696" text-anchor="start" font-size="14" font-weight="700" fill="#8b5f1c">algorithmlib</text>
+<text x="578" y="723" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameRules::moveAndCollide()</text>
+</g>
+<g class="function" data-module="servicelib" data-function="GameSession::resolveCombat()">
+<rect x="56" y="789" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
+<text x="74" y="815" text-anchor="start" font-size="14" font-weight="700" fill="#246786">servicelib</text>
+<text x="74" y="842" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GameSession::resolveCombat()</text>
+</g>
+<text x="398" y="320" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">01 阻挡检查</text>
+<text x="984" y="320" text-anchor="middle" font-size="15" font-weight="400" fill="#314d6a">门的重写</text>
+<text x="560" y="384" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">基类默认不阻挡</text>
+<text x="1048" y="384" text-anchor="start" font-size="15" font-weight="400" fill="#227461">关闭的门加入本步障碍集合</text>
+<text x="398" y="420" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">02 取碰撞矩形</text>
+<text x="1048" y="421" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">QRectF</text>
+<text x="1048" y="445" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">角色和目标的世界矩形</text>
+<text x="398" y="512" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">03 组装 EnemyInput</text>
+<text x="1048" y="513" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">EnemyDecision</text>
+<text x="1048" y="537" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">state、moveDirection、attackRequested</text>
+<text x="398" y="604" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">04 按步长应用重力</text>
+<text x="1048" y="605" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">velocity</text>
+<text x="1048" y="629" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">更新竖直速度并限制下落速度</text>
+<text x="398" y="696" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">05 修正位移</text>
+<text x="398" y="729" text-anchor="middle" font-size="15" font-weight="400" fill="#475d71">bounds, velocity, solidBounds</text>
+<text x="1048" y="697" text-anchor="start" font-size="16" font-weight="700" fill="#172d43">MovementResult</text>
+<text x="1048" y="721" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">写回 position、velocity、onGround</text>
+<text x="250" y="774" text-anchor="start" font-size="16" font-weight="400" fill="#314d6a">用修正后的站位结算</text>
+</g>
+</svg>
