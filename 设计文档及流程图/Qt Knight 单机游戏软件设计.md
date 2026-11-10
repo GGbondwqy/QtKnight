@@ -6,7 +6,7 @@
 
 | 模块 | 主要类型 | 负责的操作 |
 | --- | --- | --- |
-| `QtKnightApp` | `MainWindow`、`GamePlayWidget` | 装配页面，处理窗口和键盘事件，将动作与经过时间提交给会话。 |
+| `QtKnightApp` | `MainWindow`、`GamePlayWidget` | GamePlayWidget 将键盘事件映射为会话动作，失焦时清理输入。MainWindow 装配页面，推进会话并调度画布与音效。 |
 | `servicelib` | `GameSession` | 持有会话状态和运行世界，调度固定步，提交交互、关卡切换和进度写入。 |
 | `maplib` | `LevelLoader` | 读取关卡 JSON，校验后输出 `GameMap` 或关卡摘要列表。 |
 | `algorithmlib` | `GameRules` | 接收几何和规则参数，返回速度、碰撞结果、攻击矩形或敌人决策。 |
@@ -19,9 +19,9 @@
 
 *图 1　游戏业务总览*
 
-进入关卡时，入口函数准备候选 `World`，满足提交条件后由 `activateLevel()` 替换当前世界。游玩时，画布通过 `setAction()` 提交动作变化，主窗口通过 `advance()` 提交经过时间。会话在 `step()` 中按顺序写回运动、战斗与交互结果。
+进入关卡时，入口函数准备候选 `World`，满足提交条件后由 `activateLevel()` 替换当前世界。游玩时，`GamePlayWidget` 通过 `setAction()` 提交动作变化。`MainWindow::onFrame()` 通过 `advance()` 提交经过时间。会话在 `step()` 中按顺序写回运动、战斗与交互结果。
 
-界面绘制时借用 `const World&`，主窗口取走会话反馈并逐条交给音效播放器。检查点与关卡完成结果由会话提交，`writeProgress()` 负责将可恢复进度写入槽文件。
+会话推进后，主窗口请求独立画布重绘，再将会话反馈逐条交给 `AudioPlayer`。Qt 派发绘制事件时，画布将 `const World&` 交给 `SceneRenderer`。检查点与关卡完成结果由会话提交，`writeProgress()` 负责将可恢复进度写入槽文件。
 
 ## 2. 数据归属与会话状态
 
@@ -30,7 +30,7 @@
 | 数据 | 持有者 | 交接与更新 |
 | --- | --- | --- |
 | `GameMap` | 候选或当前 `World` | `LevelLoader` 填充关卡范围、出生点、静态障碍、生成项和规则。会话据此创建运行对象。 |
-| `GameSession::World` | `GameSession` | 保存关卡配置、具体类型的实体和逻辑帧号。会话更新状态，画布和渲染器借用只读引用。 |
+| `GameSession::World` | `GameSession` | 保存关卡配置、具体类型的实体和逻辑帧号。会话更新状态，独立画布在绘制事件中借用只读引用并交给 `SceneRenderer`。 |
 | `InputState` | `GameSession` | `held` 记录持续动作，`pressed` 记录按下沿。界面通过动作接口更新，会话在逻辑步中读取。 |
 | `SaveSlot` | 存档读取或写入流程 | 保存槽号、关卡编号、保存时间和 `playerData`，由会话读取或写入完整记录。 |
 | `Feedback` 队列 | `GameSession` | 记录已确认的结果。`takeFeedback()` 取出并清空队列，主窗口转交每项反馈。 |
@@ -123,7 +123,7 @@ classDiagram
 
 *图 2　应用初始化与槽位读取*
 
-1. `MainWindow` 使用关卡目录与存档目录构造 `GameSession`。`buildPages()` 创建页面与画布，将同一会话交给 `GamePlayWidget`，并登记界面回调。
+1. `MainWindow` 使用关卡目录与存档目录构造 `GameSession`。`buildPages()` 创建页面，装配输入控件 `gameInput_` 和独立画布 `gameCanvas_`，将会话交给 `GamePlayWidget` 并登记界面回调。
 2. `refreshPage()` 读取 `state()` 并选择页面。显示槽列表时调用 `readSaveSlots()`。会话逐槽执行 `readSaveSlot()`，由 `SaveSlot::loadFromSaveJson()` 将完整槽 JSON 转成记录，再返回 `QList<SaveSlot>`。
 3. 界面通过 `isOccupied()` 区分空槽和占用槽。损坏槽标记为 `corrupted` 并视为占用。目录级读取失败时返回 `false`，保留原槽列表。
 
@@ -175,7 +175,7 @@ classDiagram
 
 *图 6　输入映射与固定步调度*
 
-`keyPressEvent()` 和 `keyReleaseEvent()` 更新物理按键集合。`updateActions()` 按绑定归并按键，将实际变化的 `Action` 和 `pressed` 交给 `setAction()`。同一动作绑定多个键时，释放其中一键后按其余绑定键决定动作状态。跳跃和主动交互读取按下沿。
+`GamePlayWidget` 的 `keyPressEvent()` 和 `keyReleaseEvent()` 更新物理按键集合。`updateActions()` 按绑定归并按键，将实际变化的 `Action` 和 `pressed` 交给 `setAction()`。同一动作绑定多个键时，释放其中一键后按其余绑定键决定动作状态。跳跃和主动交互读取按下沿。
 
 `onFrame()` 把 `elapsedSeconds` 交给 `advance()`。`Playing` 时以 `1 / 60 s` 为步长调用 `step()`，一次最多补 5 步。每步先推进计时、敌人决策和移动，再结算战斗及符合条件的交互。
 
@@ -259,7 +259,7 @@ classDiagram
 
 会话处理暂停请求时调用 `setPaused(true)`，继续回调调用 `setPaused(false)`。状态切换清除会话动作和累计时间余量。
 
-窗口失活时，`MainWindow::changeEvent()` 先让画布清理物理键，再暂停会话。`focusOutEvent()` 调用 `releaseInput()`，`setKeyBindings()` 重绑时先复用该清理入口。`releaseInput()` 清除物理按键集合，然后调用 `releaseAll()` 清除会话动作。
+窗口失活时，`MainWindow::changeEvent()` 先调用输入控件的 `releaseInput()`，再暂停会话。输入控件失焦时，`focusOutEvent()` 调用同一入口。`setKeyBindings()` 重绑时也先清理输入。`releaseInput()` 清除物理按键集合，然后调用 `releaseAll()` 清除会话动作。
 
 ### 6.2 画面提交与分层绘制
 
@@ -267,7 +267,7 @@ classDiagram
 
 *图 14　画面提交与分层绘制*
 
-`MainWindow::onFrame()` 推进会话后请求重绘。`paintEvent()` 读取 `world()`，将 `const World&` 与视口交给 `SceneRenderer::paint()`。绘制项在本次绘制期间借用实体地址。
+`MainWindow::onFrame()` 调用 `advance()` 后，通过 `gameCanvas_->update()` 向 Qt 提交重绘请求。Qt 派发绘制事件时，独立画布在 `paintEvent()` 中调用 `GameSession::world()`，把画笔、`const World&` 和视口交给主窗口持有的 `SceneRenderer::paint()`。绘制项只在本次回调中借用实体地址。
 
 `paint()` 计算受地图范围约束的相机变换。`buildDrawQueue()` 按图层、类别和对象编号排序，`drawEntity()` 按顺序绘制。世界层依次处理背景、地形、陷阱与交互物、角色、门与出口、特效和前景。世界绘制结束后恢复屏幕坐标，`drawHud()` 输出状态和提示。
 
@@ -279,7 +279,7 @@ classDiagram
 
 主窗口构造 `AudioPlayer`，通过 `loadFromDirectory()` 读取资源，通过 `setVolumes(masterVolume, effectsVolume)` 应用音量。读取失败返回 `false` 并填写 `errorMessage`，保留已加载音效。
 
-每次推进会话后，`onFrame()` 调用 `takeFeedback()` 取出并清空队列，将每个 `Feedback` 交给 `play()`。菜单回调将 `MenuSound` 交给 `playMenuSound()`。
+`onFrame()` 提交重绘请求后，调用 `takeFeedback()` 取出并清空队列，将每个 `Feedback` 交给 `AudioPlayer::play()`。绘制回调只读世界。菜单回调将 `MenuSound` 交给 `playMenuSound()`。
 
 ### 6.4 会话退出与进度确认
 
@@ -297,20 +297,19 @@ classDiagram
 
 | 函数 | 业务作用 | 对应流程图 |
 | --- | --- | --- |
-| `GamePlayWidget::GamePlayWidget()` | 绑定会话，让输入和绘制使用同一个世界 | 《应用初始化与槽位读取》 |
+| `GamePlayWidget::GamePlayWidget()` | 为输入控件绑定会话 | 《应用初始化与槽位读取》 |
 | `GamePlayWidget::setKeyBindings()` | 应用动作与物理键的对应关系，支持一项动作绑定多个键 | 《暂停状态与输入清理》 |
 | `GamePlayWidget::releaseInput()` | 一起清理物理按键和会话动作，处理失焦与重绑 | 《暂停状态与输入清理》 |
-| `GamePlayWidget::paintEvent()` | 在 Qt 重绘时借用世界并交给渲染器 | 《画面提交与分层绘制》 |
 | `GamePlayWidget::keyPressEvent()` | 捕获真实按下，提供动作状态变化 | 《输入映射与固定步调度》 |
 | `GamePlayWidget::keyReleaseEvent()` | 捕获真实松开，为动作合并提供最新按键集合 | 《输入映射与固定步调度》 |
-| `GamePlayWidget::focusOutEvent()` | 画布失焦时启动输入清理 | 《暂停状态与输入清理》 |
+| `GamePlayWidget::focusOutEvent()` | 输入控件失焦时启动输入清理 | 《暂停状态与输入清理》 |
 | `GamePlayWidget::updateActions()` | 把物理键集合合并为会话动作状态 | 《输入映射与固定步调度》 |
 | `MainWindow::MainWindow()` | 用内容与用户数据目录装配会话、页面和表现组件 | 《应用初始化与槽位读取》 |
 | `MainWindow::closeEvent()` | 接入系统关窗，按确认选择和保存结果决定是否关闭 | 《会话退出与进度确认》 |
 | `MainWindow::changeEvent()` | 窗口失活时清理输入并暂停 | 《暂停状态与输入清理》 |
-| `MainWindow::buildPages()` | 建立页面，将按钮连接到对应会话入口 | 《应用初始化与槽位读取》 |
+| `MainWindow::buildPages()` | 装配页面、输入控件和独立画布，连接按钮与会话入口 | 《应用初始化与槽位读取》 |
 | `MainWindow::refreshPage()` | 按会话状态刷新页面、槽位与关卡列表 | 《应用初始化与槽位读取》 |
-| `MainWindow::onFrame()` | 用经过时间驱动会话，然后转交反馈和请求重绘 | 《输入映射与固定步调度》 |
+| `MainWindow::onFrame()` | 推进会话，提交重绘请求，再转交音效反馈 | 《输入映射与固定步调度》《画面提交与分层绘制》《音效资源初始化与反馈播放》 |
 | `MainWindow::confirmLeave()` | 根据未保存进度返回保存、放弃或取消的决定 | 《会话退出与进度确认》 |
 
 ### servicelib

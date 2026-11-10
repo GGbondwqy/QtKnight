@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1464" height="774" viewBox="0 32 1464 774" xml:lang="zh-CN" role="img" aria-labelledby="title description">
 <title id="title">音效资源初始化与反馈播放</title>
-<desc id="description">初始化资源与音量，窗口在推进后消费反馈队列。</desc>
+<desc id="description">初始化资源和音量，主窗口请求重绘后派发音效反馈。</desc>
 <g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
 <rect x="0" y="0" width="1464" height="806" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
 <text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">音效资源初始化与反馈播放</text>
-<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">初始化资源与音量，窗口在推进后消费反馈队列。</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">初始化资源和音量，主窗口请求重绘后派发音效反馈。</text>
 <polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
 <polygon points="88,153 79,157 79,149" fill="#314d6a"/>
 <text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>

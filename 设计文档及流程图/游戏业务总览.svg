@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1051" viewBox="0 32 1440 1051" xml:lang="zh-CN" role="img" aria-labelledby="title description">
 <title id="title">游戏业务总览</title>
-<desc id="description">入口提交 World。输入和定时调度汇入固定步，会话将状态与反馈交给界面。</desc>
+<desc id="description">入口提交 World。键盘输入和定时推进汇入会话，独立画布读取世界，主窗口派发音效反馈。</desc>
 <g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
 <rect x="0" y="0" width="1440" height="1083" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
 <text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">游戏业务总览</text>
-<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">从入口调用到固定步、输出与进度写入。</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">从关卡入口到固定步、画面、音效与进度写入。</text>
 <polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
 <polygon points="88,153 79,157 79,149" fill="#314d6a"/>
 <text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
@@ -136,7 +136,7 @@
 <text x="385" y="663" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">held / pressed</text>
 <text x="962" y="652" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">bounds</text>
 <text x="962" y="708" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">位移结果</text>
-<text x="425" y="801" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">const World&amp; · 经画布</text>
+<text x="425" y="801" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">const World&amp; · 独立画布</text>
 <text x="734" y="795" text-anchor="start" font-size="16" font-weight="400" fill="#314d6a">health &gt; 0</text>
 <text x="1028" y="801" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">Feedback · 经主窗口</text>
 <text x="734" y="955" text-anchor="start" font-size="16" font-weight="400" fill="#314d6a">提交进度后</text>

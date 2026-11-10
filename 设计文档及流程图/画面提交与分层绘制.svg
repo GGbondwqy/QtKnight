@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1464" height="774" viewBox="0 32 1464 774" xml:lang="zh-CN" role="img" aria-labelledby="title description">
 <title id="title">画面提交与分层绘制</title>
-<desc id="description">画布借用 const World&amp;，按排序结果绘制后提交 HUD。</desc>
+<desc id="description">主窗口请求重绘，独立画布借用只读世界并调用渲染器。</desc>
 <g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
 <rect x="0" y="0" width="1464" height="806" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
 <text x="56" y="92" text-anchor="start" font-size="43" font-weight="700" fill="#172d43">画面提交与分层绘制</text>
-<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">画布借用 const World&amp;，按排序结果绘制后提交 HUD。</text>
+<text x="58" y="124" text-anchor="start" font-size="19" font-weight="400" fill="#475d71">主窗口请求重绘，独立画布借用只读世界并调用渲染器。</text>
 <polyline points="58,153 88,153" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
 <polygon points="88,153 79,157 79,149" fill="#314d6a"/>
 <text x="98" y="158" text-anchor="start" font-size="15" font-weight="400" fill="#475d71">函数调用</text>
@@ -24,8 +24,6 @@
 <polyline points="236,416 236,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
 <polyline points="236,498 560,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
 <polygon points="560,498 551,502 551,494" fill="#314d6a"/>
-<path d="M740,416 L740,423 M740,428 L740,435 M740,440 L740,447 M740,452 L740,459" fill="none" stroke="#227461" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="740,462 736,453 744,453" fill="#227461"/>
 <polyline points="740,534 740,734" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
 <polyline points="920,498 1048,498" fill="none" stroke="#314d6a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
 <polygon points="1048,498 1039,502 1039,494" fill="#314d6a"/>
@@ -40,10 +38,10 @@
 <text x="74" y="252" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
 <text x="74" y="279" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">MainWindow::onFrame()</text>
 </g>
-<g class="function" data-module="QtKnightApp" data-function="GamePlayWidget::paintEvent()">
-<rect x="56" y="344" width="360" height="72" rx="10" fill="#eef1fc" stroke="#465fa1" stroke-width="1.25"/>
-<text x="74" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#465fa1">QtKnightApp</text>
-<text x="74" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">GamePlayWidget::paintEvent()</text>
+<g class="function" data-module="QtWidgets" data-function="QWidget::paintEvent()">
+<rect x="56" y="344" width="360" height="72" rx="10" fill="#eef1f4" stroke="#4b596b" stroke-width="1.25"/>
+<text x="74" y="370" text-anchor="start" font-size="14" font-weight="700" fill="#4b596b">Qt Widgets · 独立画布</text>
+<text x="74" y="397" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">QWidget::paintEvent()</text>
 </g>
 <g class="function" data-module="servicelib" data-function="GameSession::world()">
 <rect x="560" y="344" width="360" height="72" rx="10" fill="#e9f4fb" stroke="#246786" stroke-width="1.25"/>
@@ -70,11 +68,10 @@
 <text x="1066" y="724" text-anchor="start" font-size="14" font-weight="700" fill="#755095">visuallib</text>
 <text x="1066" y="751" text-anchor="start" font-size="18" font-weight="700" fill="#172d43">SceneRenderer::drawHud()</text>
 </g>
-<text x="249" y="326" text-anchor="start" font-size="16" font-weight="400" fill="#7953a0">请求重绘</text>
+<text x="249" y="326" text-anchor="start" font-size="16" font-weight="400" fill="#7953a0">推进后 update()</text>
 <text x="488" y="358" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">查询</text>
 <text x="488" y="415" text-anchor="middle" font-size="16" font-weight="400" fill="#227461">const World&amp;</text>
-<text x="398" y="489" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">World, viewport</text>
-<text x="753" y="444" text-anchor="start" font-size="16" font-weight="400" fill="#227461">只读借用</text>
+<text x="398" y="489" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">QPainter&amp;, const World&amp;, viewport</text>
 <text x="984" y="489" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">01 排序</text>
 <text x="894" y="607" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">02 逐项绘制</text>
 <text x="894" y="725" text-anchor="middle" font-size="16" font-weight="400" fill="#314d6a">03 恢复屏幕坐标</text>
